@@ -58,6 +58,18 @@ body {
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
 }
+.rotation-slow-clock {
+    animation: spinClock;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+.rotation-slow-reversed-clock {
+    animation: spinReversedClock;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
 
 @keyframes spinClock {
     from {
@@ -73,10 +85,13 @@ body {
         transform: rotate(0deg);
     }
 }
-.gorsTestSaMere {
-    color: pink;
+@keyframes spinReversedClock {
+    from {
+        transform: rotate(360deg);
+    } to {
+        transform: rotate(0deg);
+    }
 }
-
 
 
 
