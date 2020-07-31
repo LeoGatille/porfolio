@@ -24,6 +24,16 @@ body {
         background-repeat: no-repeat;
         background-size: contain;
     }
+    // .gear-giant {
+    //     width: 1200px;
+    //     height: 1200px; 
+    //     background-image: url('http://127.0.0.1:5500/assets/gears/SVG/fichier-10.svg');
+    // }
+    .gear-big {
+        width: 1350px;
+        height: 1350px; 
+        background-image: url('http://127.0.0.1:5500/assets/gears/SVG/fichier-9.svg');
+    }
     .gear-one {
         width: 1000px;
         height: 1000px; 
@@ -69,6 +79,13 @@ body {
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
+}
+.rotation-super-slow-reversed-clock {
+    animation: spinReversedClock;
+    animation-duration: 100000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    
 }
 
 @keyframes spinClock {
