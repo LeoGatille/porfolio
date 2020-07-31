@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.top-gear-container {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    background-color: #141414;
+    overflow: hidden;
+    .gears-overflow-container {
+        height: 1300px;
+        width: max-content;
+    }
+    .gears-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .gear {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .gear-one {
+        width: 1000px;
+        height: 1000px; 
+        background-image: url('http://127.0.0.1:5500/assets/gears/SVG/fichier-7.svg');
+    }
+    .gear-two {
+        width: 800px;
+        height: 800px; 
+        background-image: url('http://127.0.0.1:5500/assets/gears/SVG/fichier-8.svg');
+    }
+    .gear-three {
+        width: 600px;
+        height: 600px; 
+        background-image: url('http://127.0.0.1:5500/assets/gears/SVG/fichier-6.svg');
+    }
+    .gear-four {
+        width: 300px;
+        height: 300px; 
+        background-image: url('http://127.0.0.1:5500/assets/gears/SVG/fichier-5.svg');
+    }
+}
+
+.rotation-fast-clock {
+    animation: spinClock;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+.rotation-fast-reverse-clock {
+    animation: spinReversedClock;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spinClock {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spinReversedClock {
+    from {
+        transform: rotate(360deg);
+    } to {
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+//* SVG boring
+// .svg-container {
+//     position: absolute;
+//     padding: 50px 0 0 0;
+// }
+// .top-svg-container {
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-end;
+//     width: 100%;
+//     height: 618px;
+//    // overflow: hidden;
+//     background-color: rgb(54, 54, 54);
+//     .first-svg {
+//         // background-color: rgb(62, 62, 226);
+//         width: 500px;
+//         // height: 100%;
+//         // position: absolute;
+//         // z-index: 1;
+//     }
+//     .second-svg {
+//         // background-color: rgb(62, 226, 177);
+//         width: 100%;
+//         height: 80%;
+//         position: absolute;
+//         z-index: 2;
+        
+//     }
+//     .third-svg {
+//         // background-color: rgb(233, 136, 10);
+//         width: 450px;
+//         height: 60%;
+//         position: absolute;
+//         z-index: 3;
+        
+//     }
+//     .fourth-svg {
+//         // background-color: rgb(226, 62, 226);
+//         width: 350px;
+//         height: 40%;
+//         position: absolute;
+//         z-index: 4;
+        
+//     }
+//     .fifth-svg {
+//         // background-color: rgb(245, 241, 18);
+//         width: 250px;
+//         height: 20%;
+//         position: absolute;
+//         z-index: 5;
+        
+//     }
+//     .sixth-svg {
+//         // background-color: rgb(226, 62, 103);
+//         width: 150px;
+//         height: 10%;
+//         position: absolute;
+//         z-index: 6;
+        
+//     }
+// }
+
+// .first-spin {
+//     animation: spin;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: linear;
+//     animation-duration: 5000ms;
+// }
+// @keyframes spin {
+//     from {
+//         transform:rotate(0deg);
+//     }
+//     to {
+//         transform:rotate(360deg);
+//     }
+// }
