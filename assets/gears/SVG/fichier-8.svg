@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1103.81 1165.02"><defs><style>.cls-1{fill:none;}.cls-1,.cls-2{stroke:#ffbe0b;stroke-miterlimit:10;}.cls-2{fill:#141414;}</style></defs><title>Fichier 8</title><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><circle class="cls-1" cx="536.5" cy="587.1" r="536"/><circle class="cls-2" cx="38.7" cy="387.5" r="32"/><circle class="cls-2" cx="161.31" cy="966.52" r="20"/><circle class="cls-2" cx="562.31" cy="1123.52" r="41"/><circle class="cls-2" cx="787.31" cy="1060.52" r="25"/><circle class="cls-2" cx="1065.31" cy="687.52" r="38"/><circle class="cls-2" cx="1037.31" cy="394.52" r="29"/><circle class="cls-2" cx="1042.31" cy="764.52" r="17"/><circle class="cls-2" cx="606.81" cy="55.36" r="54.86"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1103.81 1165.02">
+	<defs>
+		<style>
+			.cls-1{fill:none;}.cls-1,.cls-2{stroke:#ffbe0b;stroke-miterlimit:10;}.cls-2{fill:#141414;}
+		</style>
+	</defs>
+	<title>
+		Fichier 8
+	</title>
+	<g id="Calque_2" data-name="Calque 2">
+		<g id="Calque_1-2" data-name="Calque 1">
+			<circle class="cls-1" cx="536.5" cy="587.1" r="536" />
+			<circle class="cls-2" cx="38.7" cy="387.5" r="32" />
+			<circle class="cls-2" cx="161.31" cy="966.52" r="20" />
+			<circle class="cls-2" cx="562.31" cy="1123.52" r="41" />
+			<circle class="cls-2" cx="787.31" cy="1060.52" r="25" />
+			<circle class="cls-2" cx="1065.31" cy="687.52" r="38" />
+			<circle class="cls-2" cx="1037.31" cy="394.52" r="29" />
+			<circle class="cls-2" cx="1042.31" cy="764.52" r="17" />
+			<circle class="cls-2" cx="606.81" cy="55.36" r="54.86" />
+		</g>
+	</g>
+</svg>

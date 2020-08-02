@@ -41,36 +41,6 @@ body {
     height: 300px;
     background-image: url("http://127.0.0.1:5500/assets/gears/SVG/fichier-5.svg"); }
 
-.rotation-fast-clock {
-  animation: spinClock;
-  animation-duration: 3000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
-
-.rotation-fast-reverse-clock {
-  animation: spinReversedClock;
-  animation-duration: 1500ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
-
-.rotation-slow-clock {
-  animation: spinClock;
-  animation-duration: 10000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
-
-.rotation-slow-reversed-clock {
-  animation: spinReversedClock;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
-
-.rotation-super-slow-reversed-clock {
-  animation: spinReversedClock;
-  animation-duration: 100000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
-
 @keyframes spinClock {
   from {
     transform: rotate(0deg); }

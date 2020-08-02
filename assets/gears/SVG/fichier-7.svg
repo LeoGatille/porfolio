@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 958.57 927.85"><defs><style>.cls-1{fill:none;}.cls-1,.cls-2{stroke:#ffbe0b;stroke-miterlimit:10;}.cls-2{fill:#141414;}</style></defs><title>Fichier 7</title><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><circle class="cls-1" cx="477.49" cy="463.93" r="463.43"/><circle class="cls-2" cx="295.19" cy="37.55" r="27.67"/><circle class="cls-2" cx="18.19" cy="527.55" r="17.69"/><circle class="cls-2" cx="52.19" cy="279.55" r="32.69"/><circle class="cls-2" cx="135.19" cy="152.55" r="19.69"/><circle class="cls-2" cx="199.19" cy="834.55" r="30.69"/><circle class="cls-2" cx="845.57" cy="181.82" r="47.43"/><circle class="cls-2" cx="749.9" cy="841.93" r="25"/><circle class="cls-2" cx="939.07" cy="416.29" r="19"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 958.57 927.85">
+	<defs>
+		<style>
+			.cls-1{fill:none;}.cls-1,.cls-2{stroke:#ffbe0b;stroke-miterlimit:10;}.cls-2{fill:#141414;}
+		</style>
+	</defs>
+	<title>
+		Fichier 7
+	</title>
+	<g id="Calque_2" data-name="Calque 2">
+		<g id="Calque_1-2" data-name="Calque 1">
+			<circle class="cls-1" cx="477.49" cy="463.93" r="463.43" />
+			<circle class="cls-2" cx="295.19" cy="37.55" r="27.67" />
+			<circle class="cls-2" cx="18.19" cy="527.55" r="17.69" />
+			<circle class="cls-2" cx="52.19" cy="279.55" r="32.69" />
+			<circle class="cls-2" cx="135.19" cy="152.55" r="19.69" />
+			<circle class="cls-2" cx="199.19" cy="834.55" r="30.69" />
+			<circle class="cls-2" cx="845.57" cy="181.82" r="47.43" />
+			<circle class="cls-2" cx="749.9" cy="841.93" r="25" />
+			<circle class="cls-2" cx="939.07" cy="416.29" r="19" />
+		</g>
+	</g>
+</svg>
