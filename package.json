@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:LeoGatille/porfolio.git",
+  "author": "Leo <leo@initiation.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.1.0"
+  }
+}
