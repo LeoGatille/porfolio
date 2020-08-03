@@ -3,7 +3,6 @@ import * as $ from 'jquery'
 console.log('Bonjour les enfants');
 $(document).ready(() => {
     const topGears: TopGears = new TopGears();
-
 });
 
 //* deported into TopGears.ts
