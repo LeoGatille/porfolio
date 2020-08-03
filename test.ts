@@ -1,5 +1,5 @@
 import * as $ from 'jquery'
-console.log('Bonjour à tous');
+console.log('Bonjour les enfants');
 
 $(document).ready(() => {
 
@@ -7,8 +7,6 @@ $(document).ready(() => {
 });
 function speenThoseGears() {
     const one = $('#one');
-    console.log('TOTO');
-
     const two = $('#two');
     const three = $('#three');
     const four = $('#four');
