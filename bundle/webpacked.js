@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./lib/class/topGears.js":
+/*!*******************************!*\
+  !*** ./lib/class/topGears.js ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.TopGears = void 0;\r\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\r\nvar TopGears = /** @class */ (function () {\r\n    function TopGears() {\r\n        this.one = $('#one');\r\n        this.two = $('#two');\r\n        this.three = $('#three');\r\n        this.four = $('#four');\r\n        this.five = $('#five');\r\n        this.gearsArray = [];\r\n        this.gearsArray = [\r\n            this.one, this.two, this.three, this.four, this.five,\r\n        ];\r\n        this.setInitialRotation();\r\n        this.setInitalSpeed();\r\n    }\r\n    TopGears.prototype.setInitialRotation = function () {\r\n        this.gearsArray.forEach(function (gear, i) {\r\n            if (i % 2) {\r\n                gear.addClass('rotation-clock');\r\n            }\r\n            else {\r\n                gear.addClass('rotation-reversed-clock');\r\n            }\r\n        });\r\n    };\r\n    TopGears.prototype.setInitalSpeed = function () {\r\n        this.gearsArray.forEach(function (gear, i) {\r\n            gear.addClass(\"rotation-speed-\" + (i + 1));\r\n        });\r\n    };\r\n    return TopGears;\r\n}());\r\nexports.TopGears = TopGears;\r\n//# sourceMappingURL=topGears.js.map\n\n//# sourceURL=webpack:///./lib/class/topGears.js?");
+
+/***/ }),
+
 /***/ "./lib/test.js":
 /*!*********************!*\
   !*** ./lib/test.js ***!
@@ -94,7 +106,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\r\nconsole.log('Bonjour les enfants');\r\n$(document).ready(function () {\r\n    speenThoseGears();\r\n});\r\nfunction speenThoseGears() {\r\n    var one = $('#one');\r\n    var two = $('#two');\r\n    var three = $('#three');\r\n    var four = $('#four');\r\n    var five = $('#five');\r\n    var six = $('#six');\r\n}\r\n//# sourceMappingURL=test.js.map\n\n//# sourceURL=webpack:///./lib/test.js?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar topGears_1 = __webpack_require__(/*! ./class/topGears */ \"./lib/class/topGears.js\");\r\nvar $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\r\nconsole.log('Bonjour les enfants');\r\n$(document).ready(function () {\r\n    var topGears = new topGears_1.TopGears();\r\n});\r\n//* deported into TopGears.ts\r\n// function speenTopGears() {\r\n//     getTopGears();\r\n// }\r\n// function getTopGears() {\r\n//     return {\r\n//     }\r\n//     const one = $('#one');\r\n//     const two = $('#two');\r\n//     const three = $('#three');\r\n//     const four = $('#four');\r\n//     const five = $('#five');\r\n//     const six = $('#six');\r\n// }\r\n//# sourceMappingURL=test.js.map\n\n//# sourceURL=webpack:///./lib/test.js?");
 
 /***/ }),
 

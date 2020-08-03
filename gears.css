@@ -1,9 +1,11 @@
 .rotation-clock {
+  transform-origin: center;
   animation: spinClock;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
-
-.rotation-reversed-clock {
+  
+  .rotation-reversed-clock {
+  transform-origin: center;
   animation: spinReversedClock;
   animation-iteration-count: infinite;
   animation-timing-function: linear; }
