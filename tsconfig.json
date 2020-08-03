@@ -1,8 +1,19 @@
 {
     "compilerOptions": {
-        "target": "es5",
         "module": "commonjs",
+        "noImplicitAny": true,
+        "target": "es5",
         "sourceMap": true,
+        "moduleResolution": "node",
         "watch": true,
+        "importHelpers": true,
+        "outDir": "./lib",
+        "allowJs": true,
+        "lib": [
+            "dom",
+            "es2015",
+            "es5",
+            "es6"
+        ],
     }
 }

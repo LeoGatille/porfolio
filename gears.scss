@@ -1,14 +1,50 @@
-.top-gears-svg {
-    .one {
 
-    }
-    .two {
+.rotation-clock {
+    animation: spinClock;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+.rotation-reversed-clock {
+    animation: spinReversedClock;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+.rotation-speed-1 {
+    animation-duration: 10000ms;
+}
+.rotation-speed-2 {
+    animation-duration: 7000ms;
 
-    }
-    .three {
+}
+.rotation-speed-3 {
+    animation-duration: 5000ms;
 
+}
+.rotation-speed-4 {
+    animation-duration: 3000ms;
+
+}
+.rotation-speed-5 {
+    animation-duration: 2000ms;
+
+}
+.rotation-speed-6 {
+    animation-duration: 1500ms;
+
+}
+
+
+@keyframes spinClock {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
     }
-    .four {
-        
+}
+@keyframes spinReversedClock {
+    from {
+        transform: rotate(360deg);
+    } to {
+        transform: rotate(0deg);
     }
 }
