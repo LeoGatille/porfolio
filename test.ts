@@ -7,25 +7,21 @@ $(document).ready(() => {
     // $('#first-ground-circle').click(() => {
     //     topGears.initialAnimation()
     // })
-    const firstGear = new Gear('four', -3);
-    firstGear.animation();
-    setTimeout(() => {
-        firstGear.stopRotation()
-    },2000)
+    const topGears: any = {
+        one: new Gear('one', -0.2),
+        two: new Gear('two', 0.7),
+        three: new Gear('three', -0.4),
+        four: new Gear('four', 1.5),
+        five: new Gear('five', -1.9),
+    }
+
+    for (const key in topGears) {
+        topGears[key].animation()
+    }
+
+    // const firstGear = new Gear('four', 3);
+    // firstGear.animation();
+    // setTimeout(() => {
+    //     firstGear.stopRotation()
+    // }, 2000)
 });
-
-//* deported into TopGears.ts
-// function speenTopGears() {
-//     getTopGears();
-// }
-// function getTopGears() {
-//     return {
-
-//     }
-//     const one = $('#one');
-//     const two = $('#two');
-//     const three = $('#three');
-//     const four = $('#four');
-//     const five = $('#five');
-//     const six = $('#six');
-// }
