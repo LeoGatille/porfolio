@@ -64,7 +64,7 @@ export class TopGears {
     }
     private setGearsToinitialRotation() {
         this.gearsArray.forEach(gear => {
-            gear.addClass()
+            // gear.addClass()
         })
     }
 }
