@@ -17,7 +17,9 @@ export class Gear {
         this.request = requestAnimationFrame(this.animation);
         this.test();
     }
-
+    public stopRotation() {
+        cancelAnimationFrame(this.request);
+    }
     public test() {
         if (this.speening) {
             this.setRotationDeg();
@@ -26,9 +28,7 @@ export class Gear {
         }
 
     }
-    public stopRotation() {
-        // clearInterval(this.rotation);
-    }
+
     private setRotationDeg() {
         this.currentRotationDeg += 1 * this.speed;
     }

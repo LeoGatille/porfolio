@@ -8,8 +8,10 @@ $(document).ready(() => {
     //     topGears.initialAnimation()
     // })
     const firstGear = new Gear('four', -3);
-    requestAnimationFrame(firstGear.animation);
-    // firstGear.a();
+    firstGear.animation();
+    setTimeout(() => {
+        firstGear.stopRotation()
+    },2000)
 });
 
 //* deported into TopGears.ts
