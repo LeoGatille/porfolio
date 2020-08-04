@@ -1,3 +1,7 @@
+.stoping-transition {
+  transition: all;
+  transition-duration: 0.5s; }
+
 .rotation-clock {
   transform-origin: center;
   animation: spinClock;

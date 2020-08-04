@@ -3,6 +3,9 @@ import * as $ from 'jquery'
 console.log('Bonjour les enfants');
 $(document).ready(() => {
     const topGears: TopGears = new TopGears();
+    $('#first-ground-circle').click(() => {
+        topGears.initialAnimation()
+    })
 });
 
 //* deported into TopGears.ts

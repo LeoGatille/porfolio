@@ -1,5 +1,6 @@
 import * as $ from 'jquery'
 export class TopGears {
+    firstLaunch = true;
     one = $('#one');
     two = $('#two');
     three = $('#three');
@@ -11,14 +12,14 @@ export class TopGears {
         this.gearsArray = [
             this.one, this.two, this.three, this.four, this.five,
         ];
+        this.initialAnimation();
+    }
+    public initialAnimation() {
         this.setInitialRotation();
         this.setInitalSpeed();
         setTimeout(() => {
             this.stopRotation();
-            // setTimeout(() => {
-            //     this.setRegularSpeed();
-            // }, 200);
-        }, 1000);
+        }, 2000);
     }
     private setInitialRotation() {
         this.gearsArray.forEach((gear, i) => {
@@ -36,19 +37,17 @@ export class TopGears {
     }
     private stopRotation() {
         const anglesArray: number[] = this.getCurrentRotationsValues();
-        console.log('angles => ', anglesArray);
-
         this.gearsArray.forEach((gear, i) => {
+            gear.addClass('stoping-transition');
             gear.css('transform', 'matrix(' + anglesArray[i] + ')');
             gear.removeClass(`rotation-speed-fast-${i + 1}`);
         });
     }
-    getRotationDegrees(gear: JQuery<HTMLElement>) {
+    private getRotationDegrees(gear: JQuery<HTMLElement>) {
         const matrix = gear.css("transform");
         let matrixValues: any = matrix.split('(')[1];
         matrixValues = matrixValues.split(')')[0],
             matrixValues = matrixValues.split(',');
-        console.log('MatrixValues => ', matrixValues);
         return matrixValues;
     }
     private getCurrentRotationsValues() {
@@ -63,13 +62,9 @@ export class TopGears {
             gear.addClass(`rotation-speed-slow-${i + 1}`);
         });
     }
-    // private switchColors() {
-    //     if (this.initColor) {
-    //         console.log('toto');
-    //         const toto = $('.cls-2')
-    //         toto.removeClass('cls-2');
-    //         toto.addClass('gears-init-color-fill');
-    //         // $('.cls-2').addClass('gears-seconday-color-fill');
-    //     }
-    // }
+    private setGearsToinitialRotation() {
+        this.gearsArray.forEach(gear => {
+            gear.addClass()
+        })
+    }
 }
