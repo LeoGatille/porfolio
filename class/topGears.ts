@@ -35,18 +35,26 @@ export class TopGears {
         });
     }
     private stopRotation() {
-        const matrix = this.getCurrentRotationsValues();
-        console.log('matrix => ', matrix);
-        //! must get the rotate values !
+        const anglesArray: number[] = this.getCurrentRotationsValues();
+        console.log('angles => ', anglesArray);
+
         this.gearsArray.forEach((gear, i) => {
+            gear.css('transform', 'matrix(' + anglesArray[i] + ')');
             gear.removeClass(`rotation-speed-fast-${i + 1}`);
-            gear.css('transform', 'matrix(' + matrix[i] + ')');
         });
     }
-    private getCurrentRotationsValues(): string[] {
-        const rotationsValuesArray: string[] = [];
-        this.gearsArray.forEach(gears => {
-            rotationsValuesArray.push(gears.css('transform'));
+    getRotationDegrees(gear: JQuery<HTMLElement>) {
+        const matrix = gear.css("transform");
+        let matrixValues: any = matrix.split('(')[1];
+        matrixValues = matrixValues.split(')')[0],
+            matrixValues = matrixValues.split(',');
+        console.log('MatrixValues => ', matrixValues);
+        return matrixValues;
+    }
+    private getCurrentRotationsValues() {
+        const rotationsValuesArray: number[] = [];
+        this.gearsArray.forEach(gear => {
+            rotationsValuesArray.push(this.getRotationDegrees(gear));
         });
         return rotationsValuesArray;
     }
