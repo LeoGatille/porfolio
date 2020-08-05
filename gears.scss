@@ -1,54 +1,3 @@
-//* transition
-.stoping-transition {
-    transition: all;
-    transition-duration: 0.5s;
-}
-
-.rotation-clock {
-    transform-origin: center;
-    animation: spinClock;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-}
-.rotation-reversed-clock {
-    animation: spinReversedClock;
-    transform-origin: center;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; 
-}
-//* Launching speed
-.rotation-speed-fast-1 {
-    animation-duration: 25000ms;
-}
-.rotation-speed-fast-2 {
-    animation-duration: 8000ms;
-}
-.rotation-speed-fast-3 {
-    animation-duration: 5000ms;
-}
-.rotation-speed-fast-4 {
-    animation-duration: 4000ms;
-}
-.rotation-speed-fast-5 {
-    animation-duration: 1000ms;
-}
-
-//* standard speed
-.rotation-speed-slow-1 {
-    animation-duration: 50000ms;
-}
-.rotation-speed-slow-2 {
-    animation-duration: 10000ms;
-}
-.rotation-speed-slow-3 {
-    animation-duration: 16000ms;
-}
-.rotation-speed-slow-4 {
-    animation-duration: 7000ms;
-}
-.rotation-speed-slow-5 {
-    animation-duration: 4000ms;
-}
 
 
 .gears-init-color-fill {
@@ -64,18 +13,70 @@
     stroke: #141414;
 }
 
+//! Obsolete
+// //* transition
+// .stoping-transition {
+//     transition: all;
+//     transition-duration: 0.5s;
+// }
 
-@keyframes spinClock {
-    from {
-        transform: rotate(0deg);
-    } to {
-        transform: rotate(360deg);
-    }
-}
-@keyframes spinReversedClock {
-    from {
-        transform: rotate(360deg);
-    } to {
-        transform: rotate(0deg);
-    }
-}
+// .rotation-clock {
+//     transform-origin: center;
+//     animation: spinClock;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: linear; 
+// }
+// .rotation-reversed-clock {
+//     animation: spinReversedClock;
+//     transform-origin: center;
+//     animation-iteration-count: infinite;
+//     animation-timing-function: linear; 
+// }
+// //* Launching speed
+// .rotation-speed-fast-1 {
+//     animation-duration: 25000ms;
+// }
+// .rotation-speed-fast-2 {
+//     animation-duration: 8000ms;
+// }
+// .rotation-speed-fast-3 {
+//     animation-duration: 5000ms;
+// }
+// .rotation-speed-fast-4 {
+//     animation-duration: 4000ms;
+// }
+// .rotation-speed-fast-5 {
+//     animation-duration: 1000ms;
+// }
+
+// //* standard speed
+// .rotation-speed-slow-1 {
+//     animation-duration: 50000ms;
+// }
+// .rotation-speed-slow-2 {
+//     animation-duration: 10000ms;
+// }
+// .rotation-speed-slow-3 {
+//     animation-duration: 16000ms;
+// }
+// .rotation-speed-slow-4 {
+//     animation-duration: 7000ms;
+// }
+// .rotation-speed-slow-5 {
+//     animation-duration: 4000ms;
+// }
+
+// @keyframes spinClock {
+//     from {
+//         transform: rotate(0deg);
+//     } to {
+//         transform: rotate(360deg);
+//     }
+// }
+// @keyframes spinReversedClock {
+//     from {
+//         transform: rotate(360deg);
+//     } to {
+//         transform: rotate(0deg);
+//     }
+// }
