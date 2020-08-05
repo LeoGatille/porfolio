@@ -29,3 +29,24 @@ body {
         }
     }
 }
+.top-circle-absolute-container {
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    .top-circle-relative-container {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: relative;
+        #first-ground-circle {
+            background: #141414;
+            width: 215px;
+            height: 215px;
+            border-radius: 100%;
+            position: absolute;
+        }
+    }
+}
