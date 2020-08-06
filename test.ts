@@ -9,11 +9,10 @@ $(document).ready(() => {
         two: new Gear('two', 0.7),
         three: new Gear('three', -0.4),
         four: new Gear('four', 1.5),
-        five: new Gear('five', -1.9),
+        five: new Gear('five', -2),
     }
     for (const key in topGears) {
-      //  topGears[key].animation()
+        topGears[key].animation()
     }
-    const testResize = new RelativeWidth('five', 'first-ground-circle', 70);
-
+    const testResize = new RelativeWidth('top-SVG', 'first-ground-circle', 15);
 });

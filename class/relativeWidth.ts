@@ -7,6 +7,7 @@ export class RelativeWidth {
         this.referenceWidth = document.getElementById(idReference).getBoundingClientRect().width;
         // this.referenceWidth = this.reference.width();
         this.percentageWidth = percentageWidth;
+        this.editTargetWidthNheight();
     }
     idReference: string;
     percentageWidth: number
@@ -30,4 +31,4 @@ export class RelativeWidth {
         const widthAndUnit: string = domElement.css('width');
         return parseInt(widthAndUnit.split('px')[0], 10);
     }
-}
+} 
