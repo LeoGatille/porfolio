@@ -16,7 +16,6 @@ body {
 
 #top-gear-container {
   width: 100%;
-  height: 650px;
   display: flex;
   justify-content: center;
   overflow: hidden; }
@@ -50,5 +49,29 @@ body {
       position: absolute; }
 
 #overflow-container {
-  width: 100%;
-  height: 350px; }
+  width: 100%; }
+
+#overflow-container {
+  width: 100%; }
+
+.background-max-height {
+  height: 650px; }
+
+@media (max-width: 700px) {
+  #top-gear-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden; }
+    #top-gear-container .gears-container {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #top-gear-container .gears-overflow-container {
+      height: 750px;
+      width: 70%; }
+      #top-gear-container .gears-overflow-container .gears-SVG {
+        width: 1350px;
+        overflow: overlay; }
+  .background-max-height {
+    height: 1000px; } }

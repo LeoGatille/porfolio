@@ -22,8 +22,8 @@ export class Gear {
         this.request = requestAnimationFrame(this.animation);
         this.rotate();
     }
-    public editRoationSpeed(newSpeed: number) {
-        this.speed = newSpeed;
+    public editRoationSpeed(callback: any,) {
+        this.speed = callback(this.speed);
     }
     public stopRotation() {
         cancelAnimationFrame(this.request);

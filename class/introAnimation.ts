@@ -1,5 +1,16 @@
+import { Gear } from './gear';
 import * as $ from 'jquery';
 export class IntroAnimation {
+    constructor(allGears: Gear[]) {
+        this.typedGears = allGears;
+        this.gearsArray = [
+            this.one, this.two, this.three, this.four, this.five,
+        ];
+        this.setInitialHeight();
+        this.backgroundMaxHeigth = this.background.height();
+        //this.initialAnimation();
+    }
+    typedGears: Gear[];
     firstLaunch = true;
     one = $('#one');
     two = $('#two');
@@ -11,16 +22,44 @@ export class IntroAnimation {
     overflowContainer = $('#overflow-container')
     gearsArray: JQuery<HTMLElement>[] = [];
     initColor = true;
-    constructor() {
-        this.gearsArray = [
-            this.one, this.two, this.three, this.four, this.five,
-        ];
-        this.initialAnimation();
+    request: any;
+    backgroundHeight = window.window.innerHeight;
+    backgroundMaxHeigth: number;
+    rise = () => {
+        this.request = requestAnimationFrame(this.rise);
+        if (this.backgroundHeight > 650) {
+            this.speedUpGears();
+            this.riseBottomElements();
+        } else {
+            cancelAnimationFrame(this.request);
+            setTimeout(() => {
+                this.typedGears.forEach(gear => {
+                    gear.stopRotation();
+                })
+                this.launchSwitchColors();
+            }, 300)
+        }
     }
-    public initialAnimation() {
+    private speedUpGears() {
+        this.typedGears.forEach(gear => {
+            gear.editRoationSpeed((currentSpeed: number) => {
+                return currentSpeed + 0.3;
+            });
+        });
+    }
+    private setInitialHeight() {
+        this.background.css('height', `${this.backgroundHeight}px`);
+        this.overflowContainer.css('height', '0');
+    }
+    public launchSwitchColors() {
         this.gearsArray.forEach((gear) => {
             this.switchColor(gear);
         })
+    }
+    private riseBottomElements() {
+        this.backgroundHeight = this.backgroundHeight - 5;
+        this.background.css('height', `${this.backgroundHeight}px`);
+        this.overflowContainer.css('height', `${this.overflowContainer.height() + 5}`);
     }
     private switchColor(gear: JQuery<HTMLElement>) {
         const childrenJQueryObj = gear.children();
