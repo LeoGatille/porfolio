@@ -27,7 +27,7 @@ export class IntroAnimation {
     backgroundMaxHeigth: number;
     rise = () => {
         this.request = requestAnimationFrame(this.rise);
-        if (this.backgroundHeight > 650) {
+        if (this.backgroundHeight > (window.window.innerWidth > 1200 ? 650 : (window.window.innerHeight / 2))) {
             this.speedUpGears();
             this.riseBottomElements();
         } else {
