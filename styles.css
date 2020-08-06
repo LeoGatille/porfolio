@@ -43,11 +43,12 @@ body {
     display: flex;
     align-items: center;
     position: relative; }
-    .top-circle-absolute-container .top-circle-relative-container #first-ground-circle {
-      width: 215px;
-      height: 215px;
-      border-radius: 100%;
-      position: absolute; }
+
+#first-ground-circle {
+  width: 215px;
+  height: 215px;
+  border-radius: 100%;
+  position: absolute; }
 
 #overflow-container {
   width: 100%; }

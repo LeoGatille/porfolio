@@ -50,9 +50,17 @@ export class IntroAnimation {
     jumpOneFrame = false;
     increaseBackgroundCircleScale = () => {
         if (this.backgroundCircle.height() < 2300) {
-            this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
-            this.backgroundCircle.css('height', `${this.backgroundCircle.height() + 200}px`);
-            this.backgroundCircle.css('width', `${this.backgroundCircle.width() + 200}px`);
+            if (this.backgroundCircle.height() < 1500) {
+                this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
+                this.backgroundCircle.css('height', `${this.backgroundCircle.height() + 200}px`);
+                this.backgroundCircle.css('width', `${this.backgroundCircle.width() + 200}px`);
+            } else {
+                //* slow the animation on it end
+                this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
+                this.backgroundCircle.css('height', `${this.backgroundCircle.height() + 100}px`);
+                this.backgroundCircle.css('width', `${this.backgroundCircle.width() + 100}px`);
+            }
+
         } else {
             cancelAnimationFrame(this.request);
             //*change BACKGROUND color here because of lazyness....
