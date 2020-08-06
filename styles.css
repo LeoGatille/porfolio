@@ -2,27 +2,32 @@ body {
   margin: 0;
   padding: 0; }
 
+.dark-background {
+  background-color: #141414; }
+
+.yellow-background {
+  background-color: #fcbd15; }
+
 .top-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-direction: column; }
 
-.top-gear-container {
+#top-gear-container {
   width: 100%;
   height: 650px;
   display: flex;
   justify-content: center;
-  background-color: #141414;
   overflow: hidden; }
-  .top-gear-container .gears-container {
+  #top-gear-container .gears-container {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .top-gear-container .gears-overflow-container {
+  #top-gear-container .gears-overflow-container {
     height: 1300px;
     width: 70%; }
-    .top-gear-container .gears-overflow-container .gears-SVG {
+    #top-gear-container .gears-overflow-container .gears-SVG {
       width: 100%;
       overflow: overlay; }
 

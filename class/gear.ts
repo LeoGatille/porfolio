@@ -41,4 +41,5 @@ export class Gear {
         }
         this.currentRotationDeg += 1 * this.speed;
     }
+
 }

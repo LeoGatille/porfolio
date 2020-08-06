@@ -2,18 +2,24 @@ body {
     margin: 0;
     padding: 0;
 }
+.dark-background  {
+    background-color: #141414;
+}
+.yellow-background  {
+    background-color: #fcbd15;
+}
 .top-container {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
 }
-.top-gear-container {
+#top-gear-container {
     width: 100%;
     height: 650px;
     display: flex;
     justify-content: center;
-    background-color: #141414;
+    
     overflow: hidden;
     .gears-container {
         display: flex;
