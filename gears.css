@@ -1,11 +1,16 @@
-.gears-init-color-fill {
+.no-fill {
+  fill: none; }
+
+.yellow-fill {
   fill: #fcbd15; }
 
-.gears-init-color-stroke {
-  stroke: #fcbd15; }
+.yellow-stroke {
+  stroke: #fcbd15;
+  stroke-miterlimit: 55; }
 
-.gears-seconday-color-fill {
+.dark-stroke {
+  stroke: #141414;
+  stroke-miterlimit: 55; }
+
+.dark-fill {
   fill: #141414; }
-
-.gears-seconday-color-stroke {
-  stroke: #141414; }

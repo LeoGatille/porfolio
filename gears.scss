@@ -1,16 +1,34 @@
 
 
-.gears-init-color-fill {
+// .gears-init-color-fill {
+//     fill: #fcbd15;
+// }
+// .gears-init-color-stroke {
+//     stroke: #fcbd15;
+// }
+// .gears-seconday-color-fill {
+//     fill: #141414;
+// }
+// .gears-seconday-color-stroke {
+//     stroke: #141414;
+// }
+
+.no-fill {
+    fill: none;
+}
+.yellow-fill {
     fill: #fcbd15;
 }
-.gears-init-color-stroke {
+.yellow-stroke {
     stroke: #fcbd15;
+    stroke-miterlimit: 55;
 }
-.gears-seconday-color-fill {
-    fill: #141414;
-}
-.gears-seconday-color-stroke {
+.dark-stroke {
     stroke: #141414;
+    stroke-miterlimit: 55;
+}
+.dark-fill {
+    fill: #141414;
 }
 
 //! Obsolete

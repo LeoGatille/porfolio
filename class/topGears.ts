@@ -25,7 +25,7 @@ export class TopGears {
         const childrenArray = childrenJQueryObj.toArray();
         childrenArray.forEach((jquerMachin, i) => {
             jquerMachin.classList.replace('yellow-fill', 'gears-seconday-color-fill');
-            jquerMachin.classList.replace('yellow-stroke', 'gears-seconday-color-fill');
+            jquerMachin.classList.replace('yellow-stroke', 'gears-seconday-color-stroke');
             jquerMachin.classList.replace('black-fill', 'gears-init-color-fill');
         });
         this.background.addClass('yellow-background');

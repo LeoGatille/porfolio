@@ -48,11 +48,14 @@ body {
         align-items: center;
         position: relative;
         #first-ground-circle {
-            background: #141414;
             width: 215px;
             height: 215px;
             border-radius: 100%;
             position: absolute;
         }
     }
+}
+#overflow-container {
+    width: 100%;
+    height: 350px;
 }
