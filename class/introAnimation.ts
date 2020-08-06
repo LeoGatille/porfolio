@@ -1,3 +1,4 @@
+import { BouncingAnimation } from './bouncingAnimation';
 import { Gear } from './gear';
 import * as $ from 'jquery';
 export class IntroAnimation {
@@ -25,25 +26,51 @@ export class IntroAnimation {
     request: any;
     backgroundHeight = window.window.innerHeight;
     backgroundMaxHeigth: number;
+    backgroundCircleContainer = $("#background-circle-container");
+    backgroundCircle = $("#background-circle");
     rise = () => {
         this.request = requestAnimationFrame(this.rise);
-        if (this.backgroundHeight > window.window.innerHeight / 2/*(window.window.innerWidth > 1200 ? 650 : (window.window.innerHeight / 2))*/) {
+        if (this.backgroundHeight > window.window.innerHeight / 2) {
             this.speedUpGears();
             this.riseBottomElements();
         } else {
             cancelAnimationFrame(this.request);
-            setTimeout(() => {
-                this.typedGears.forEach(gear => {
-                    gear.stopRotation();
-                })
-                this.launchSwitchColors();
-            }, 300)
+            //const bouncingBackground = new BouncingAnimation(this.background, this.gearsArray, this.typedGears, 15);
+            //this.bouncingBackgroud
+            this.typedGears.forEach(gear => {
+                gear.stopRotation();
+            });
+            this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
+            this.launchSwitchColors();
+
+            //* Bouncing maybe don't need for setTimeout()
+
         }
     }
+    jumpOneFrame = false;
+    increaseBackgroundCircleScale = () => {
+        if (this.backgroundCircle.height() < 2300) {
+            this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
+            this.backgroundCircle.css('height', `${this.backgroundCircle.height() + 200}px`);
+            this.backgroundCircle.css('width', `${this.backgroundCircle.width() + 200}px`);
+        } else {
+            cancelAnimationFrame(this.request);
+            //*change BACKGROUND color here because of lazyness....
+            this.background.addClass('yellow-background');
+            this.background.removeClass('dark-background');
+            this.backgroundCircle.remove();
+
+        }
+
+    }
+    // bouncingBackground = () => {
+    //     this.request = requestAnimationFrame(this.bouncingBackground);
+    //     this.
+    // }
     private speedUpGears() {
         this.typedGears.forEach(gear => {
             gear.editRoationSpeed((currentSpeed: number) => {
-                return currentSpeed + 0.3;
+                return currentSpeed + 0.1;
             });
         });
     }
@@ -59,6 +86,7 @@ export class IntroAnimation {
     private riseBottomElements() {
         this.backgroundHeight = this.backgroundHeight - 5;
         this.background.css('height', `${this.backgroundHeight}px`);
+        this.backgroundCircleContainer.css('height', `${this.backgroundHeight}px`);
         this.overflowContainer.css('height', `${this.overflowContainer.height() + 5}`);
     }
     private switchColor(gear: JQuery<HTMLElement>) {
@@ -74,11 +102,10 @@ export class IntroAnimation {
                 jqueryMachin.classList.replace('yellow-stroke', 'dark-stroke');
             }
         });
-        this.background.addClass('yellow-background');
-        this.background.removeClass('dark-background');
         this.centralCircle.addClass('yellow-background');
         this.centralCircle.removeClass('dark-background');
         this.overflowContainer.addClass('dark-background');
         this.overflowContainer.removeClass('yellow-background');
+
     }
 }

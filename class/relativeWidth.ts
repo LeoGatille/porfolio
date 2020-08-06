@@ -16,8 +16,6 @@ export class RelativeWidth {
     referenceWidth: number;
     windowResizeListener = window.addEventListener('resize', () => this.editTargetWidthNheight());
     //? Do I need targetWidth ?
-    // targetWidth: number;
-
     private calculTargetWidth() {
         return (document.getElementById(this.idReference).getBoundingClientRect().width * this.percentageWidth) / 100;
     }

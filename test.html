@@ -12,7 +12,7 @@
 
 <body>
     <section class="top-container">
-        <div id="top-gear-container" class="dark-background background-max-height">
+        <div id="top-gear-container" class="dark-background background-max-height" style="z-index: -1;">
             <div class="gears-container gears-overflow-container">
                 <svg id="top-SVG" class="gears-SVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1418.31 1418.32">
 
@@ -77,15 +77,34 @@
                     </g>
                 </svg>
                 <div class="top-circle-absolute-container" style="position: absolute; width: 215px; height: 215px;">
+                    <!-- <div id="background-circle-container"
+                        style="position: absolute; width: 100%; z-index: -1; overflow: hidden; ">
+                        <div id="background-circle" style="border-radius: 100%; background-color: yellow;"></div>
+                    </div> -->
                     <div class="top-circle-relative-container" style="position:relative;">
+
+
                         <div id="first-ground-circle" class="dark-background">
                         </div>
                     </div>
                 </div>
+                <div class="top-circle-absolute-container" style="position: absolute; width: 215px; height: 215px;">
+                    <!-- <div id="background-circle-container"
+                        style="position: absolute; width: 100%; z-index: -1; overflow: hidden; ">
+                        <div id="background-circle" style="border-radius: 100%; background-color: yellow;"></div>
+                    </div> -->
+                    <div class="top-circle-relative-container" style="position:relative; z-index: -10;">
+                        <div id="background-circle"
+                            style="background-color: #fcbd15; z-index: -10; position:absolute; height: 0; width: 0; margin: auto; border-radius: 100%;">
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
+        </div>
     </section>
-    <div id="overflow-container" class="yellow-background">
+    <div id="overflow-container" class="yellow-background" style="z-index: 10;">
 
     </div>
     <script src="bundle/webpacked.js"></script>

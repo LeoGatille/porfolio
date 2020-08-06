@@ -7,5 +7,13 @@ export class StandardAnimation {
         this.jQueryGears = jQueryGears;
     }
     typedGears: Gear[];
-    jQueryGears: JQuery<HTMLElement>[]
+    jQueryGears: JQuery<HTMLElement>[];
+    animation = () => {
+        requestAnimationFrame(this.animation);
+        this.typedGears.forEach(gear => {
+            gear.editRoationSpeed(() => {
+                return 0.9;
+            })
+        })
+    }
 }
