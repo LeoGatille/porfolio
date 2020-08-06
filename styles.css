@@ -24,7 +24,7 @@ body {
     justify-content: center;
     align-items: center; }
   #top-gear-container .gears-overflow-container {
-    height: 1300px;
+    height: 100vh;
     width: 70%; }
     #top-gear-container .gears-overflow-container .gears-SVG {
       width: 100%;
@@ -107,8 +107,6 @@ body {
       justify-content: center;
       align-items: center; }
     #top-gear-container .gears-overflow-container {
-      height: 100vh;
-      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center; }
