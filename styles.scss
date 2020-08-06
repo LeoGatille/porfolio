@@ -70,7 +70,6 @@ body {
         width: 100%;
         display: flex;
         justify-content: center;
-        
         overflow: hidden;
         .gears-container {
             display: flex;
@@ -91,13 +90,14 @@ body {
         height: 1000px
     }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
     #top-gear-container {
         width: 100%;
         display: flex;
         justify-content: center;
         overflow: hidden;
         .gears-container {
+            width: 150%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -118,13 +118,14 @@ body {
         height: 1000px
     }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     #top-gear-container {
         width: 100%;
         display: flex;
         justify-content: center;
         overflow: hidden;
         .gears-container {
+            // width: 200%;
             display: flex;
             justify-content: center;
             align-items: center;

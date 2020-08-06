@@ -76,13 +76,14 @@ body {
   .background-max-height {
     height: 1000px; } }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   #top-gear-container {
     width: 100%;
     display: flex;
     justify-content: center;
     overflow: hidden; }
     #top-gear-container .gears-container {
+      width: 150%;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -96,7 +97,7 @@ body {
   .background-max-height {
     height: 1000px; } }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   #top-gear-container {
     width: 100%;
     display: flex;
