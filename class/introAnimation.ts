@@ -38,8 +38,8 @@ export class IntroAnimation {
             cancelAnimationFrame(this.request);
             //this.bouncingBackgroud
             this.typedGears.forEach((gear, i) => {
-                //gear.stopRotation();
                 const breaking = new StopingGearAnimation(gear, 50, 0.1, 30, 0.4);
+                // breaking.setRollBack()
             });
             this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
             const bouncingBackground = new BouncingAnimation(this.background, this.overflowContainer, 40);
