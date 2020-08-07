@@ -21,11 +21,12 @@ export class StopingGearAnimation {
             this.gear.speed = 0;
             this.gear.stopRotation();
             clearInterval(this.breaking);
+            this.setRollBack();
         }
     }, this.breakInterval);
 
     public setMomentumSuppension() {
-        this.gear.stopRotation();
+        this.gear.animation();
         let momentumSpeed = this.gear.speed / 4;
         const momentum = setInterval(() => {
             this.gear.editRoationSpeed((speed: number) => {
