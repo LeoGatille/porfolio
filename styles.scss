@@ -92,7 +92,7 @@ body {
         height: 1000px
     }
 }
-@media (min-width: 650px) and (max-width: 800px) {
+@media (min-width: 650px) and (max-width: 850px) and (max-height: 400px) {
     #top-gear-container {
         width: 100%;
         display: flex;
@@ -109,7 +109,7 @@ body {
 
             .gears-SVG {
                 transform: scale(0.3);
-                width: 1300px;
+                // width: 1300px;
                 overflow: overlay;
             }
         }
