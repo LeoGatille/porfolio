@@ -10,16 +10,11 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="dark-background">
     <section>
 
-
-        <div
-            style="display: flex; justify-content: center; align-items: center; position: absolute; margin: auto; z-index: 100; width: 100%; height: 100%;">
-            <div id="first-ground-circle" class="dark-background"></div>
-        </div>
-        <section class="top-container" style="z-index: 1;">
-            <div id="top-gear-container" class="dark-background background-max-height" style="z-index: 1;">
+        <section class="top-container">
+            <div id="top-gear-container" class="background-max-height">
                 <div class="gears-container gears-overflow-container">
                     <svg id="top-SVG" class="gears-SVG" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 1418.31 1418.32">
@@ -105,8 +100,11 @@
                             <div id="background-circle"
                                 style="background-color: #fcbd15; z-index: -10; position: static; height: 0; width: 0; margin: auto; border-radius: 100%;">
                             </div>
-
                         </div>
+                    </div>
+                    <div
+                        style="display: flex; justify-content: center; align-items: center; position: absolute; margin: auto; z-index: 11; ">
+                        <div id="first-ground-circle" class="dark-background"></div>
                     </div>
                 </div>
             </div>
@@ -114,8 +112,15 @@
         </section>
     </section>
     <div id="overflow-container" class="yellow-background" style="z-index: 10; position: absolute; ">
-        <!-- <div style="width: ;"></div> -->
-
+        <div class="presentation-text-container"
+            style="display: flex; justify-content: space-between; padding: 0 20px 0 20px; width: 100%;">
+            <div class="presentation-text" style="background-color: red;">
+                p
+            </div>
+            <div class="presentation-text" style="background-color: red">
+                p
+            </div>
+        </div>
     </div>
     <script src="bundle/webpacked.js"></script>
 </body>

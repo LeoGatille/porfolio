@@ -39,6 +39,7 @@ export class IntroAnimation {
             //this.bouncingBackgroud
             this.typedGears.forEach((gear, i) => {
                 const breaking = new StopingGearAnimation(gear, 50, 0.1, 30, 0.4);
+                
             });
             setTimeout(() => {
                 this.typedGears.forEach((gear, i) => {
