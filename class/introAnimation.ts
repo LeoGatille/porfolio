@@ -91,11 +91,33 @@ export class IntroAnimation {
             this.switchColor(gear);
         })
     }
+    riseSpeedControl = 5;
     private riseBottomElements() {
-        this.backgroundHeight = this.backgroundHeight - 5;
+        this.setRiseSpeed();
+        this.backgroundHeight = this.backgroundHeight - this.riseSpeedControl;
         this.background.css('height', `${this.backgroundHeight}px`);
         this.backgroundCircleContainer.css('height', `${this.backgroundHeight}px`);
-        this.overflowContainer.css('height', `${this.overflowContainer.height() + 5}`);
+        this.overflowContainer.css('height', `${this.overflowContainer.height() + this.riseSpeedControl}`);
+    }
+    private setRiseSpeed() {
+        // if (this.backgroundHeight < (window.window.innerHeight / 12)) {
+        //     this.riseSpeedControl = 3
+        // }
+        // if (this.backgroundHeight < (window.window.innerHeight / 11)) {
+        //     this.riseSpeedControl = 4
+        // }
+        // if (this.backgroundHeight < (window.window.innerHeight / 10)) {
+        //     this.riseSpeedControl = 5
+        // }
+        // if (this.backgroundHeight < (window.window.innerHeight / 9)) {
+        //     this.riseSpeedControl = 6
+        // }
+        if (this.backgroundHeight < (window.window.innerHeight / 6)) {
+            this.riseSpeedControl = 6
+        }
+        if (this.backgroundHeight < (window.window.innerHeight / 1.2)) {
+            this.riseSpeedControl = 9
+        }
     }
     private switchColor(gear: JQuery<HTMLElement>) {
         const childrenJQueryObj = gear.children();
