@@ -45,7 +45,7 @@ export class StopingGearAnimation {
     }
     public setRollBack() {
         this.gear.editRoationSpeed((speed: number) => {
-            return (Math.random() * (0.5 - 0.1 + 1) + 0.5) * -1;
+            return (Math.random() * (0.8 - 0.1 + 1) + 0.1) * -1;
         });
         setTimeout(() => {
             this.gear.stopRotation()
