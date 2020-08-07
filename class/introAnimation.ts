@@ -1,3 +1,4 @@
+import { StopingGearAnimation } from './stoppingGearAnim';
 import { BouncingAnimation } from './bouncingAnimation';
 import { Gear } from './gear';
 import * as $ from 'jquery';
@@ -35,30 +36,33 @@ export class IntroAnimation {
             this.riseBottomElements();
         } else {
             cancelAnimationFrame(this.request);
-            //const bouncingBackground = new BouncingAnimation(this.background, this.gearsArray, this.typedGears, 15);
             //this.bouncingBackgroud
-            this.typedGears.forEach(gear => {
-                gear.stopRotation();
+            this.typedGears.forEach((gear, i) => {
+                //gear.stopRotation();
+                const breaking = new StopingGearAnimation(gear, 50, 0.1, 30, 0.4);
             });
             this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
+            const bouncingBackground = new BouncingAnimation(this.background, this.overflowContainer, 40);
             this.launchSwitchColors();
-
-            //* Bouncing maybe don't need for setTimeout()
 
         }
     }
     jumpOneFrame = false;
     increaseBackgroundCircleScale = () => {
         if (this.backgroundCircle.height() < 2300) {
-            if (this.backgroundCircle.height() < 1500) {
+            if (this.backgroundCircle.height() < 500) {
                 this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
-                this.backgroundCircle.css('height', `${this.backgroundCircle.height() + 200}px`);
+                this.backgroundCircle.css('height', `${this.backgroundCircle.height() + 150}px`);
+                this.backgroundCircle.css('width', `${this.backgroundCircle.width() + 200}px`);
+            } else if (this.backgroundCircle.height() < 1500) {
+                this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
+                this.backgroundCircle.css('height', `${this.backgroundCircle.height() + 150}px`);
                 this.backgroundCircle.css('width', `${this.backgroundCircle.width() + 200}px`);
             } else {
                 //* slow the animation on it end
                 this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
-                this.backgroundCircle.css('height', `${this.backgroundCircle.height() + 100}px`);
-                this.backgroundCircle.css('width', `${this.backgroundCircle.width() + 100}px`);
+                this.backgroundCircle.css('height', `${this.backgroundCircle.height() + 50}px`);
+                this.backgroundCircle.css('width', `${this.backgroundCircle.width() + 70}px`);
             }
 
         } else {
@@ -71,10 +75,6 @@ export class IntroAnimation {
         }
 
     }
-    // bouncingBackground = () => {
-    //     this.request = requestAnimationFrame(this.bouncingBackground);
-    //     this.
-    // }
     private speedUpGears() {
         this.typedGears.forEach(gear => {
             gear.editRoationSpeed((currentSpeed: number) => {
