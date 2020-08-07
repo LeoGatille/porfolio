@@ -23,7 +23,6 @@ export class BouncingAnimation {
         this.bounceValueCounter += increment * -1;
         if (this.bounceValueCounter === maxValue) {
             this.bouncePhase++
-            console.log('BouncePhase => ', this.bouncePhase);
         }
     }
     private bounceManager() {
@@ -45,6 +44,4 @@ export class BouncingAnimation {
                 break;
         }
     }
-
-
 }

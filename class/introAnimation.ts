@@ -39,12 +39,19 @@ export class IntroAnimation {
             //this.bouncingBackgroud
             this.typedGears.forEach((gear, i) => {
                 const breaking = new StopingGearAnimation(gear, 50, 0.1, 30, 0.4);
-                // breaking.setRollBack()
             });
+            setTimeout(() => {
+                this.typedGears.forEach((gear, i) => {
+                    gear.editRoationSpeed((speed: number) => {
+                        return 0;
+                    });
+                    gear.animation();
+                });
+                this.request = requestAnimationFrame(this.setStandardRotation)
+            }, 1500);
             this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
             const bouncingBackground = new BouncingAnimation(this.background, this.overflowContainer, 40);
             this.launchSwitchColors();
-
         }
     }
     jumpOneFrame = false;
@@ -64,16 +71,35 @@ export class IntroAnimation {
                 this.backgroundCircle.css('height', `${this.backgroundCircle.height() + 50}px`);
                 this.backgroundCircle.css('width', `${this.backgroundCircle.width() + 70}px`);
             }
-
         } else {
             cancelAnimationFrame(this.request);
             //*change BACKGROUND color here because of lazyness....
             this.background.addClass('yellow-background');
             this.background.removeClass('dark-background');
             this.backgroundCircle.remove();
-
         }
-
+    }
+    chooseOperator: any = {
+        inf: (a: number, b: number) => { return a < b },
+        supp: (a: number, b: number) => { return a > b }
+    }
+    setStandardRotation = () => {
+        this.request = requestAnimationFrame(this.setStandardRotation)
+        this.speedUpOneGear(this.typedGears[0], 0.3, 0.01);
+        this.speedUpOneGear(this.typedGears[1], -0.5, -0.01);
+        this.speedUpOneGear(this.typedGears[2], 1, 0.02);
+        this.speedUpOneGear(this.typedGears[3], -1.5, -0.05);
+        this.speedUpOneGear(this.typedGears[4], 2, 0.01);
+    }
+    private speedUpOneGear(gear: Gear, limit: number, step: number) {
+        gear.editRoationSpeed((currentSpeed: number) => {
+            return currentSpeed + step;
+        });
+        if (this.chooseOperator[limit < 0 ? 'supp' : 'inf'](limit, gear.speed)) {
+            console.log('Limit');
+            cancelAnimationFrame(this.request);
+        }
+        console.log('currentSpeed => ', gear.speed);
     }
     private speedUpGears() {
         this.typedGears.forEach(gear => {
@@ -82,6 +108,7 @@ export class IntroAnimation {
             });
         });
     }
+    windowResizeListener: any;
     private setInitialHeight() {
         this.background.css('height', `${this.backgroundHeight}px`);
         this.overflowContainer.css('height', '0');
@@ -100,18 +127,6 @@ export class IntroAnimation {
         this.overflowContainer.css('height', `${this.overflowContainer.height() + this.riseSpeedControl}`);
     }
     private setRiseSpeed() {
-        // if (this.backgroundHeight < (window.window.innerHeight / 12)) {
-        //     this.riseSpeedControl = 3
-        // }
-        // if (this.backgroundHeight < (window.window.innerHeight / 11)) {
-        //     this.riseSpeedControl = 4
-        // }
-        // if (this.backgroundHeight < (window.window.innerHeight / 10)) {
-        //     this.riseSpeedControl = 5
-        // }
-        // if (this.backgroundHeight < (window.window.innerHeight / 9)) {
-        //     this.riseSpeedControl = 6
-        // }
         if (this.backgroundHeight < (window.window.innerHeight / 6)) {
             this.riseSpeedControl = 6
         }
@@ -136,6 +151,5 @@ export class IntroAnimation {
         this.centralCircle.removeClass('dark-background');
         this.overflowContainer.addClass('dark-background');
         this.overflowContainer.removeClass('yellow-background');
-
     }
 }
