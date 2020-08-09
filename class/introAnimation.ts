@@ -1,3 +1,4 @@
+import { TextAnimation } from './textAnimation';
 import { StopingGearAnimation } from './stoppingGearAnim';
 import { BouncingAnimation } from './bouncingAnimation';
 import { Gear } from './gear';
@@ -39,7 +40,7 @@ export class IntroAnimation {
             //this.bouncingBackgroud
             this.typedGears.forEach((gear, i) => {
                 const breaking = new StopingGearAnimation(gear, 50, 0.1, 30, 0.4);
-                
+
             });
             setTimeout(() => {
                 this.typedGears.forEach((gear, i) => {
@@ -52,6 +53,9 @@ export class IntroAnimation {
             }, 1500);
             this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
             const bouncingBackground = new BouncingAnimation(this.background, this.overflowContainer, 40);
+            //* show text
+            const textAnimation = new TextAnimation('.title-to-shuffle');
+            textAnimation.titleAppear();
             this.launchSwitchColors();
         }
     }
@@ -97,10 +101,8 @@ export class IntroAnimation {
             return currentSpeed + step;
         });
         if (this.chooseOperator[limit < 0 ? 'supp' : 'inf'](limit, gear.speed)) {
-            console.log('Limit');
             cancelAnimationFrame(this.request);
         }
-        console.log('currentSpeed => ', gear.speed);
     }
     private speedUpGears() {
         this.typedGears.forEach(gear => {
