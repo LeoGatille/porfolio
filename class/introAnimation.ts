@@ -1,3 +1,4 @@
+import { textAnimTest } from './textAnimationTest';
 import { TextAnimation } from './textAnimation';
 import { StopingGearAnimation } from './stoppingGearAnim';
 import { BouncingAnimation } from './bouncingAnimation';
@@ -40,8 +41,8 @@ export class IntroAnimation {
             //this.bouncingBackgroud
             this.typedGears.forEach((gear, i) => {
                 const breaking = new StopingGearAnimation(gear, 50, 0.1, 30, 0.4);
-
             });
+
             setTimeout(() => {
                 this.typedGears.forEach((gear, i) => {
                     gear.editRoationSpeed((speed: number) => {
@@ -52,10 +53,17 @@ export class IntroAnimation {
                 this.request = requestAnimationFrame(this.setStandardRotation)
             }, 1500);
             this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
+
             const bouncingBackground = new BouncingAnimation(this.background, this.overflowContainer, 40);
             //* show text
-            const textAnimation = new TextAnimation('.title-to-shuffle');
-            textAnimation.titleAppear();
+            const firstNameAnimation = new textAnimTest('#firstName', 'Léo');
+            const lastName = new textAnimTest('#lastName', 'Gatille');
+            const animatedText = new Promise((resolve) => {
+                resolve(firstNameAnimation.animationDecryptText());
+            }).then(() => {
+                lastName.animationDecryptText();
+            })
+            Promise.resolve(animatedText);
             this.launchSwitchColors();
         }
     }
