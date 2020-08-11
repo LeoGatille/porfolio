@@ -1,0 +1,15 @@
+.presentation-text-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px 0 70px; }
+  .presentation-text-container .presentation-text .title-container .title {
+    color: white;
+    font-size: 5em;
+    text-transform: uppercase;
+    line-height: 0.9em; }
+  .presentation-text-container .presentation-text .title-container .crypted {
+    display: block;
+    font-weight: 600;
+    color: #fcbd15; }
+  .presentation-text-container .presentation-text .title-container .subtitle {
+    color: white; }

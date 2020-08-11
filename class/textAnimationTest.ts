@@ -2,16 +2,17 @@ import * as $ from 'jquery';
 import { time } from 'console';
 
 export class textAnimTest {
-    constructor(target: string, txt: string) {
+    constructor(target: string, txt: string, speed: number = null) {
         this.target = $(target);
         this.randomTxtContainer = this.target.children('.crypted');
         this.trueTxtContainer = this.target.children('.uncrypted');
         console.log('RandoMContainer => ', this.randomTxtContainer);
-
+        this.speed = speed ? speed : 0;
         this.originalTxt = txt;
         this.splitedTxt = txt.split('');
         this.suffleTxt();
     }
+    speed: number
     target: JQuery<HTMLElement>;
     trueTxtContainer: JQuery<HTMLElement>;
     randomTxtContainer: JQuery<HTMLElement>;
@@ -47,13 +48,11 @@ export class textAnimTest {
             const cryptedString = this.cryptedTxt[splitedTxtIndex];
             cryptedString.split('').forEach((randomLetter, cryptedString) => {
                 this.delayDisplay(delay, randomLetter, true);
-                delay += 40;
+                delay += 20;
             });
-            delay += 40;
+            delay += 20;
             this.delayDisplay(delay, letter);
-            // if (this.trueTxtContainer.text().length === this.originalTxt.length) {
-            //     return 'toto'
-            // }
+
         });
     }
     private delayDisplay(delay: number, txtToDisplay: string, cryptedCharactere = false) {
@@ -68,7 +67,7 @@ export class textAnimTest {
                     return (currentTxt ? currentTxt : '') + txtToDisplay;
                 });
             }
-        }, delay);
+        }, delay - this.speed);
     }
     private suffleTxt() {
         this.splitedTxt.forEach(letter => {
@@ -77,7 +76,7 @@ export class textAnimTest {
     }
     private generateRandomString(): string {
         let randomString = '';
-        for (let i = 0; i < 8; i++) {
+        for (let i = 0; i < 11; i++) {
             const randomLetter = this.randomTxt[Math.floor(Math.random() * (this.randomTxt.length + 1))];
             if (this.originalTxt.includes(randomLetter)) {
                 i--;

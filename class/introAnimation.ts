@@ -57,7 +57,7 @@ export class IntroAnimation {
             const bouncingBackground = new BouncingAnimation(this.background, this.overflowContainer, 40);
             //* show text
             const firstNameAnimation = new textAnimTest('#firstName', 'Léo');
-            const lastName = new textAnimTest('#lastName', 'Gatille');
+            const lastName = new textAnimTest('#lastName', 'Gatille', 100);
             const animatedText = new Promise((resolve) => {
                 resolve(firstNameAnimation.animationDecryptText());
             }).then(() => {
