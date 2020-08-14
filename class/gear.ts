@@ -20,6 +20,10 @@ export class Gear {
     distortionPercentage: number;
     animation = () => {
         this.request = requestAnimationFrame(this.animation);
+        this.automaticRotation();
+    }
+    private automaticRotation() {
+        this.setRotationDeg();
         this.rotate();
     }
     public editRoationSpeed(callback: any,) {
@@ -28,12 +32,8 @@ export class Gear {
     public stopRotation() {
         cancelAnimationFrame(this.request);
     }
-    private rotate() {
-        if (this.speening) {
-            this.setRotationDeg();
-            this.myGear.css({ 'transform': 'rotate(' + this.currentRotationDeg + 'deg)', });
-            this.rotate;
-        }
+    public rotate(rotation?: number) {
+        this.myGear.css({ 'transform': 'rotate(' + (rotation ? rotation : this.currentRotationDeg) + 'deg)', });
     }
     private setRotationDeg() {
         if (this.currentRotationDeg === 360) {

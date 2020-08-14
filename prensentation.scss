@@ -1,6 +1,4 @@
 .presentation-text-container {
-    display: flex; 
-    justify-content: space-between; 
     padding: 0 70px 0 70px;
     .presentation-text {
         .title-container {
@@ -13,13 +11,26 @@
             .crypted {
                 display: block;
                 font-weight: 600;
-                // color: white;
                 color: #fcbd15;
-
+                text-decoration: underline;
+                text-decoration-color: white ;
             }
-            .subtitle {
+            .subtitle-container {
                 color: white;
+                #subtitle-container {
+                    color: white;
+                }
             }
         }
+        #presentation {
+            display: none;
+            color: white;
+        }
     }
+}
+.dark-shadow {
+    box-shadow: -25px 0px 10px 0px #141414 
+}
+.yellow-shadow {
+    box-shadow: -25px 0px 10px 0px #fcbd15
 }

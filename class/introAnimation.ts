@@ -4,6 +4,7 @@ import { StopingGearAnimation } from './stoppingGearAnim';
 import { BouncingAnimation } from './bouncingAnimation';
 import { Gear } from './gear';
 import * as $ from 'jquery';
+import { resolve } from 'path';
 export class IntroAnimation {
     constructor(allGears: Gear[]) {
         this.typedGears = allGears;
@@ -31,6 +32,10 @@ export class IntroAnimation {
     backgroundMaxHeigth: number;
     backgroundCircleContainer = $("#background-circle-container");
     backgroundCircle = $("#background-circle");
+    promise = new Promise((resolve, reject) => {
+        this.rise;
+        resolve('Resolved')
+    });
     rise = () => {
         this.request = requestAnimationFrame(this.rise);
         if (this.backgroundHeight > window.window.innerHeight / 2) {
@@ -42,7 +47,6 @@ export class IntroAnimation {
             this.typedGears.forEach((gear, i) => {
                 const breaking = new StopingGearAnimation(gear, 50, 0.1, 30, 0.4);
             });
-
             setTimeout(() => {
                 this.typedGears.forEach((gear, i) => {
                     gear.editRoationSpeed((speed: number) => {
@@ -53,19 +57,24 @@ export class IntroAnimation {
                 this.request = requestAnimationFrame(this.setStandardRotation)
             }, 1500);
             this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
-
             const bouncingBackground = new BouncingAnimation(this.background, this.overflowContainer, 40);
             //* show text
-            const firstNameAnimation = new textAnimTest('#firstName', 'Léo');
-            const lastName = new textAnimTest('#lastName', 'Gatille', 100);
-            const animatedText = new Promise((resolve) => {
-                resolve(firstNameAnimation.animationDecryptText());
-            }).then(() => {
-                lastName.animationDecryptText();
-            })
-            Promise.resolve(animatedText);
+            setTimeout(() => {
+                const firstNameAnimation = new textAnimTest('#firstName', 'Léo', null, 12);
+                const lastName = new textAnimTest('#lastName', 'Gatille', 80, 5);
+                const subtitle = new textAnimTest('#subtitle', 'Developpement, Design, Illustration', 350, 2);
+                const animatedText = new Promise((resolve) => {
+                    resolve(firstNameAnimation.animationDecryptText());
+                }).then(() => {
+                    lastName.animationDecryptText();
+                }).then(() => {
+                    subtitle.animationDecryptText();
+                });
+                Promise.resolve(() => animatedText);
+            }, 300);
             this.launchSwitchColors();
         }
+
     }
     jumpOneFrame = false;
     increaseBackgroundCircleScale = () => {
