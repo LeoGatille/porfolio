@@ -68,6 +68,19 @@ export class textAnimTest {
             cancelAnimationFrame(this.request);
         }
     }
+    requestLoadingBar: any;
+    public loadingBarAnimation() {
+        this.requestLoadingBar = requestAnimationFrame(this.load);
+    }
+    load = () => {
+        this.requestLoadingBar = requestAnimationFrame(this.load); 
+        const loadingBar = this.target.children('loading');
+        const mask = this.target.children('mask');
+        mask.css('margin-right', (this.extractCssValue('margin-right', mask) - 10) + 'px');
+        if (this.extractCssValue('margin-right', mask) <= 0) {
+            cancelAnimationFrame(this.requestLoadingBar);
+        }
+    }
     public animationDecryptText() {
         let delay = 0;
         this.splitedTxt.forEach((letter, splitedTxtIndex) => {

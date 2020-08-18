@@ -1,3 +1,4 @@
+import { FadeIn } from './class/fadeIn';
 import { ScrollListener } from './class/scrollListener';
 import { IntroductionTextConatainer } from './class/introductionTextContainer';
 import { IntroAnimation } from './class/introAnimation';
@@ -23,6 +24,9 @@ $(document).ready(() => {
     const introAnimationManager = new IntroAnimation(topGears);
     const introductionTextContainer = new IntroductionTextConatainer($('#overflow-container'));
     const scrollListener = new ScrollListener();
+    const stendhalQuote = new FadeIn($('.quote-container'));
+
+
     const scrollDirFn = window.addEventListener('scroll', () => {
         if (scrollListener.getScrollDirection() === 'up') {
             console.log('GearsUP');
@@ -36,7 +40,7 @@ $(document).ready(() => {
             })
         }
         if (scrollListener.getScrollDirection() === 'down') {
-            console.log('GearsDOWN');
+            console.log('GearsDOWN', scrollListener.newScrollY);
             topGears.forEach(gear => {
                 if (gear.speed > 0) {
                     gear.currentRotationDeg += 1;
@@ -47,61 +51,19 @@ $(document).ready(() => {
             })
         }
         // }
-    })
-    /* 
-    () => scrollListener.getScrollDirection((direction: string) => {
-        if (direction === 'up') {
-            topGears.forEach(gear => {
-                gear.editRoationSpeed((speed: number) => {
-                    return speed + 1
-                })
-            })
-        }
-        if (direction === 'down') {
-            topGears.forEach(gear => {
-                gear.editRoationSpeed((speed: number) => {
-                    return speed - 1
-                })
-            })
+    });
 
-        }
-    })
-    */
-    // const setScrollDirection = window.addEventListener('scroll', () => {
-    //     console.log('Listener says => ', scrollListener.getScrollValues());
-
-    //     if (scrollListener.getScrollValues() !== scrollDirection) {
-    //         scrollDirection = scrollListener.getScrollValues();
-    //         switch (scrollDirection) {
-    //             case ('up'):
-    //                 console.log('up');
-    //                 topGears.forEach(gear => {
-    //                     gear.editRoationSpeed((speed: number) => {
-    //                         return speed + 1
-    //                     })
-    //                 })
-    //                 break;
-    //             case ('down'):
-    //                 console.log('down');
-    //                 topGears.forEach(gear => {
-    //                     gear.editRoationSpeed((speed: number) => {
-    //                         return speed - 1
-    //                     })
-    //                 })
-    //                 break;
-    //         }
-    //     }
-    // })
-    // const toto = () => {
-    //     console.log(scrollDirection);
-    // }
-    // introductionTextContainer.contentFadeIn();
     setTimeout(() => {
         const myPromise = introAnimationManager.rise();
         introAnimationManager.promise.then(test => {
             console.log('Ended');
-
             introductionTextContainer.resizeHeigth();
+            const quoteApearence = window.addEventListener('scroll', () => {
+                if (scrollListener.getScrollDirection() === 'down' && scrollListener.newScrollY >= 70) {
+                    console.log('Bonjour');
+                    stendhalQuote.topDraggedAppearence();
+                }
+            })
         });
     }, 1500)
     function setTopGearsOnScroll() {

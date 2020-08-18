@@ -34,3 +34,39 @@
 .yellow-shadow {
     box-shadow: -25px 0px 10px 0px #fcbd15
 }
+.quote-container {
+    color: white;
+    display: none;
+    padding-top: 150px;
+    width: 75%;
+    line-height: 80px;
+    margin: 150px auto 0 auto;
+    .quote-typo {
+        font-size: 6em;
+        font-weight: 900;
+        font-style: italic;
+    }
+    .quote-lvl{
+        font-style: italic;
+        font-weight: 700;
+        font-size: 4em;
+        display: flex;
+    }
+    .quote-lvl-1 {
+        justify-content: flex-start;
+    }
+    .quote-lvl-2 {
+        justify-content: center;
+    }
+    .quote-lvl-3 {
+        justify-content: flex-end;
+    }
+    .source {
+        display: flex;
+        font-size: 2em;
+    }
+    .quote-emphasis {
+        font-weight: 900;
+        font-size: 1.5em;
+    }
+}
