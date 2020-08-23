@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'variables.scss';
 .experiences-container {
     .experiences-main-title {
         font-size: 4em;
@@ -20,20 +20,31 @@
                 background-color: $deepBlue;
                 height: auto;
                 margin-left: 5px;
-                margin-right: 32px;
+                margin-right: 20px;
                 width: 5px;
             }
             .date-n-text-container {
-
+                height: max-content;
                 .experiences-dates-container {
                     h4 {
                         color: $lightYellow;
-                        margin: 10px 0 20px 0;
+                        margin: 20px 0 15px 0;
                         font-size: 1.5em;
                     }
                 }
-                .experience-description {
-                    line-height: 1.5em;
+                .text-n-marker {
+                    display: flex;
+                    height: 100%;
+                    .yellow-marker {
+                        background-color: $lightYellow;
+                        height: auto;
+                        margin-left: 5px;
+                        margin-right: 20px;
+                        width: 5px;
+                    }
+                    .experience-description {
+                        line-height: 1.5em;
+                    }
                 }
             }
         }
