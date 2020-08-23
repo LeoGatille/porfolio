@@ -1,26 +1,41 @@
+@import 'variables';
 .experiences-container {
-
     .experiences-main-title {
         font-size: 4em;
     }
     .one-experience-container {
-        
-    }
-    .experience-location-container {
-        h3 {
-            color: #fcbd15;
-            font-size: 3em;
-            line-height: 0.5em;
-            margin: 55px 0 15px 0;
+        height: max-content;
+        .experience-location-container {
+            h3 {
+                color: $deepBlue;
+                font-size: 3em;
+                line-height: 0.5em;
+                margin: 55px 0 15px 0;
+            }
         }
-    }
-    .experiences-dates-container {
-        h4 {
-            margin: 10px 0 20px 0;
-            font-size: 1.5em;
+        .experience-body {
+            display: flex;
+            height: 100%;
+            .marker-blue {
+                background-color: $deepBlue;
+                height: auto;
+                margin-left: 5px;
+                margin-right: 32px;
+                width: 5px;
+            }
+            .date-n-text-container {
+
+                .experiences-dates-container {
+                    h4 {
+                        color: $lightYellow;
+                        margin: 10px 0 20px 0;
+                        font-size: 1.5em;
+                    }
+                }
+                .experience-description {
+                    line-height: 1.5em;
+                }
+            }
         }
-    }
-    .experience-description {
-        line-height: 1.5em;
     }
 }

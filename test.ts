@@ -65,7 +65,7 @@ $(document).ready(() => {
                 }
             })
         });
-    }, 0)
+    }, 1500)
     function setTopGearsOnScroll() {
     }
 });

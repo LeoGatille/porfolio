@@ -1,7 +1,7 @@
 .presentation-text-container {
   padding: 0 70px 0 70px; }
   .presentation-text-container .presentation-text .title-container .title {
-    color: white;
+    color: #000061;
     font-size: 5em;
     text-transform: uppercase;
     line-height: 0.9em; }
@@ -10,14 +10,14 @@
     font-weight: 600;
     color: #fcbd15;
     text-decoration: underline;
-    text-decoration-color: white; }
+    text-decoration-color: #000061; }
   .presentation-text-container .presentation-text .title-container .subtitle-container {
-    color: white; }
+    color: #000061; }
     .presentation-text-container .presentation-text .title-container .subtitle-container #subtitle-container {
-      color: white; }
+      color: #000061; }
   .presentation-text-container .presentation-text #presentation {
     display: none;
-    color: white; }
+    color: #000061; }
 
 .dark-shadow {
   box-shadow: -25px 0px 10px 0px #141414; }
@@ -26,7 +26,7 @@
   box-shadow: -25px 0px 10px 0px #fcbd15; }
 
 .quote-container {
-  color: white;
+  color: #241E4E;
   display: none;
   padding-top: 150px;
   width: 75%;

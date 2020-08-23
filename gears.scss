@@ -1,18 +1,35 @@
-
+@import 'variables';
+// .no-fill {
+//     fill: none;
+// }
+// .yellow-fill {
+//     fill: #fcbd15;
+// }
+// .yellow-stroke {
+//     stroke: #fcbd15;
+//     stroke-miterlimit: 55;
+// }
+// .dark-stroke {
+//     stroke: #141414;
+//     stroke-miterlimit: 55;
+// }
+// .dark-fill {
+//     fill: #141414;
+// }
 .no-fill {
     fill: none;
 }
 .yellow-fill {
-    fill: #fcbd15;
+    fill: $lightYellow;
 }
 .yellow-stroke {
-    stroke: #fcbd15;
+    stroke: $deepBlue;
     stroke-miterlimit: 55;
 }
 .dark-stroke {
-    stroke: #141414;
+    stroke: $white;
     stroke-miterlimit: 55;
 }
 .dark-fill {
-    fill: #141414;
+    fill: $white;
 }

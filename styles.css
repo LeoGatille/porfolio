@@ -5,10 +5,13 @@ body {
   font-family: 'Raleway', sans-serif; }
 
 .dark-background {
-  background-color: #141414; }
+  background-color: #ffffff; }
 
 .yellow-background {
-  background-color: #fcbd15; }
+  background-color: #ffbe5d; }
+
+.blue-background {
+  background-color: #000061; }
 
 .top-container {
   display: flex;

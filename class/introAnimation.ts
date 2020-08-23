@@ -167,7 +167,7 @@ export class IntroAnimation {
                 jqueryMachin.classList.replace('yellow-stroke', 'dark-stroke');
             }
         });
-        this.centralCircle.addClass('yellow-background');
+        this.centralCircle.addClass('blue-background');
         this.centralCircle.removeClass('dark-background');
         this.overflowContainer.addClass('dark-background');
         this.overflowContainer.removeClass('yellow-background');

@@ -2,15 +2,15 @@
   fill: none; }
 
 .yellow-fill {
-  fill: #fcbd15; }
+  fill: #ffbe5d; }
 
 .yellow-stroke {
-  stroke: #fcbd15;
+  stroke: #000061;
   stroke-miterlimit: 55; }
 
 .dark-stroke {
-  stroke: #141414;
+  stroke: #ffffff;
   stroke-miterlimit: 55; }
 
 .dark-fill {
-  fill: #141414; }
+  fill: #ffffff; }

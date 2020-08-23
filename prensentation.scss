@@ -1,9 +1,10 @@
+@import 'variables';
 .presentation-text-container {
     padding: 0 70px 0 70px;
     .presentation-text {
         .title-container {
             .title {
-                color: white;
+                color: $deepBlue;
                 font-size: 5em;
                 text-transform: uppercase;
                 line-height: 0.9em;
@@ -13,18 +14,18 @@
                 font-weight: 600;
                 color: #fcbd15;
                 text-decoration: underline;
-                text-decoration-color: white ;
+                text-decoration-color: $deepBlue ;
             }
             .subtitle-container {
-                color: white;
+                color: $deepBlue;
                 #subtitle-container {
-                    color: white;
+                    color: $deepBlue;
                 }
             }
         }
         #presentation {
             display: none;
-            color: white;
+            color: $deepBlue;
         }
     }
 }
@@ -35,7 +36,7 @@
     box-shadow: -25px 0px 10px 0px #fcbd15
 }
 .quote-container {
-    color: white;
+    color: #241E4E;
     display: none;
     padding-top: 150px;
     width: 75%;

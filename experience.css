@@ -1,15 +1,25 @@
 .experiences-container .experiences-main-title {
   font-size: 4em; }
 
-.experiences-container .experience-location-container h3 {
-  color: #fcbd15;
-  font-size: 3em;
-  line-height: 0.5em;
-  margin: 55px 0 15px 0; }
-
-.experiences-container .experiences-dates-container h4 {
-  margin: 10px 0 20px 0;
-  font-size: 1.5em; }
-
-.experiences-container .experience-description {
-  line-height: 1.5em; }
+.experiences-container .one-experience-container {
+  height: max-content; }
+  .experiences-container .one-experience-container .experience-location-container h3 {
+    color: #000061;
+    font-size: 3em;
+    line-height: 0.5em;
+    margin: 55px 0 15px 0; }
+  .experiences-container .one-experience-container .experience-body {
+    display: flex;
+    height: 100%; }
+    .experiences-container .one-experience-container .experience-body .marker-blue {
+      background-color: #000061;
+      height: auto;
+      margin-left: 5px;
+      margin-right: 32px;
+      width: 5px; }
+    .experiences-container .one-experience-container .experience-body .date-n-text-container .experiences-dates-container h4 {
+      color: #ffbe5d;
+      margin: 10px 0 20px 0;
+      font-size: 1.5em; }
+    .experiences-container .one-experience-container .experience-body .date-n-text-container .experience-description {
+      line-height: 1.5em; }
