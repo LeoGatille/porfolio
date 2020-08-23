@@ -1,5 +1,4 @@
 import { textAnimTest } from './textAnimationTest';
-import { TextAnimation } from './textAnimation';
 import { StopingGearAnimation } from './stoppingGearAnim';
 import { BouncingAnimation } from './bouncingAnimation';
 import { Gear } from './gear';
@@ -55,6 +54,7 @@ export class IntroAnimation {
                     gear.animation();
                 });
                 this.request = requestAnimationFrame(this.setStandardRotation)
+                $('#overflow-container').css('position', 'relative');
             }, 1500);
             this.request = requestAnimationFrame(this.increaseBackgroundCircleScale);
             const bouncingBackground = new BouncingAnimation(this.background, this.overflowContainer, 40);

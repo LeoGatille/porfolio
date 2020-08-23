@@ -1,0 +1,15 @@
+.experiences-container .experiences-main-title {
+  font-size: 4em; }
+
+.experiences-container .experience-location-container h3 {
+  color: #fcbd15;
+  font-size: 3em;
+  line-height: 0.5em;
+  margin: 55px 0 15px 0; }
+
+.experiences-container .experiences-dates-container h4 {
+  margin: 10px 0 20px 0;
+  font-size: 1.5em; }
+
+.experiences-container .experience-description {
+  line-height: 1.5em; }

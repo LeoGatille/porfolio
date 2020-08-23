@@ -11,13 +11,12 @@ export class IntroductionTextConatainer {
     resizeHeigth = () => {
         this.resized++;
         this.request = requestAnimationFrame(this.resizeHeigth);
-        this.container.css('height', `${this.container.height() + 5}px`);
-        if (this.resized === 100) {
+        this.container.css('height', `${this.container.height() + 10}px`);
+        if (this.resized === 250) {
             cancelAnimationFrame(this.request);
         }
     }
     contentFadeIn = window.addEventListener('scroll', () => {
-
         if (!this.displayed && this.scrollListener.getScrollDirection() === 'down' && this.scrollListener.newScrollY <= 50) {
             console.log('fuck');
             this.displayed = true;

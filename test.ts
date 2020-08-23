@@ -24,7 +24,7 @@ $(document).ready(() => {
     const introAnimationManager = new IntroAnimation(topGears);
     const introductionTextContainer = new IntroductionTextConatainer($('#overflow-container'));
     const scrollListener = new ScrollListener();
-    const stendhalQuote = new FadeIn($('.quote-container'));
+    // const stendhalQuote = new FadeIn($('.quote-container'));
 
 
     const scrollDirFn = window.addEventListener('scroll', () => {
@@ -53,19 +53,19 @@ $(document).ready(() => {
         // }
     });
 
+
     setTimeout(() => {
         const myPromise = introAnimationManager.rise();
         introAnimationManager.promise.then(test => {
-            console.log('Ended');
             introductionTextContainer.resizeHeigth();
             const quoteApearence = window.addEventListener('scroll', () => {
                 if (scrollListener.getScrollDirection() === 'down' && scrollListener.newScrollY >= 70) {
                     console.log('Bonjour');
-                    stendhalQuote.topDraggedAppearence();
+                    // stendhalQuote.topDraggedAppearence();
                 }
             })
         });
-    }, 1500)
+    }, 0)
     function setTopGearsOnScroll() {
     }
 });
