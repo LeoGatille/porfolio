@@ -1,36 +1,22 @@
-.experiences-container .experiences-main-title {
-  font-size: 4em; }
-
-.experiences-container .one-experience-container {
-  height: max-content; }
-  .experiences-container .one-experience-container .experience-location-container h3 {
-    color: #000061;
-    font-size: 3em;
-    line-height: 0.5em;
-    margin: 55px 0 15px 0; }
-  .experiences-container .one-experience-container .experience-body {
+.xp-container {
+  overflow: hidden;
+  display: flex;
+  height: 938px; }
+  .xp-container .xp-relative-container {
+    position: relative; }
+    .xp-container .xp-relative-container .xp-gears-container {
+      width: 710px; }
+      .xp-container .xp-relative-container .xp-gears-container svg {
+        position: relative;
+        margin: -350px 0 0 -400px; }
+  .xp-container .xp-caroussel {
     display: flex;
-    height: 100%; }
-    .experiences-container .one-experience-container .experience-body .marker-blue {
-      background-color: #000061;
-      height: auto;
-      margin-left: 5px;
-      margin-right: 20px;
-      width: 5px; }
-    .experiences-container .one-experience-container .experience-body .date-n-text-container {
-      height: max-content; }
-      .experiences-container .one-experience-container .experience-body .date-n-text-container .experiences-dates-container h4 {
-        color: #ffbe5d;
-        margin: 20px 0 15px 0;
-        font-size: 1.5em; }
-      .experiences-container .one-experience-container .experience-body .date-n-text-container .text-n-marker {
-        display: flex;
-        height: 100%; }
-        .experiences-container .one-experience-container .experience-body .date-n-text-container .text-n-marker .yellow-marker {
-          background-color: #ffbe5d;
-          height: auto;
-          margin-left: 5px;
-          margin-right: 20px;
-          width: 5px; }
-        .experiences-container .one-experience-container .experience-body .date-n-text-container .text-n-marker .experience-description {
-          line-height: 1.5em; }
+    flex-direction: column; }
+    .xp-container .xp-caroussel .xp-text-container .xp-location h2 {
+      font-size: 4em; }
+    .xp-container .xp-caroussel .xp-text-container .xp-location h3 {
+      font-size: 2em; }
+
+.xp-caroussel {
+  position: sticky;
+  top: 0; }

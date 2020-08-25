@@ -1,52 +1,100 @@
-@import 'variables.scss';
-.experiences-container {
-    .experiences-main-title {
-        font-size: 4em;
-    }
-    .one-experience-container {
-        height: max-content;
-        .experience-location-container {
-            h3 {
-                color: $deepBlue;
-                font-size: 3em;
-                line-height: 0.5em;
-                margin: 55px 0 15px 0;
+
+
+.xp-container {
+    overflow: hidden;
+    display: flex;
+    height: 938px;
+    .xp-relative-container {
+        position: relative;
+        .xp-gears-container {
+            width: 710px;
+            svg {
+                position: relative;
+                margin: -350px 0 0 -400px;
             }
         }
-        .experience-body {
-            display: flex;
-            height: 100%;
-            .marker-blue {
-                background-color: $deepBlue;
-                height: auto;
-                margin-left: 5px;
-                margin-right: 20px;
-                width: 5px;
-            }
-            .date-n-text-container {
-                height: max-content;
-                .experiences-dates-container {
-                    h4 {
-                        color: $lightYellow;
-                        margin: 20px 0 15px 0;
-                        font-size: 1.5em;
-                    }
+    }
+    .xp-caroussel {
+        display: flex;
+        flex-direction: column;
+        
+        .xp-text-container {
+    
+            .xp-location {
+        
+                h2 {
+                    font-size: 4em;
                 }
-                .text-n-marker {
-                    display: flex;
-                    height: 100%;
-                    .yellow-marker {
-                        background-color: $lightYellow;
-                        height: auto;
-                        margin-left: 5px;
-                        margin-right: 20px;
-                        width: 5px;
-                    }
-                    .experience-description {
-                        line-height: 1.5em;
-                    }
+                h3 {
+                    font-size: 2em;
                 }
             }
+            .multy-xp-text-container {
+                .xp-text {
+                    h3 {
+                        
+                    }
+                    p {
+                        
+                    }
+                }
+        }
         }
     }
 }
+.xp-caroussel {
+    position: sticky;
+    top: 0;
+}
+// @import 'variables.scss';
+// .experiences-container {
+//     .experiences-main-title {
+//         font-size: 4em;
+//     }
+//     .one-experience-container {
+//         height: max-content;
+//         .experience-location-container {
+//             h3 {
+//                 color: $deepBlue;
+//                 font-size: 3em;
+//                 line-height: 0.5em;
+//                 margin: 55px 0 15px 0;
+//             }
+//         }
+//         .experience-body {
+//             display: flex;
+//             height: 100%;
+//             .marker-blue {
+//                 background-color: $deepBlue;
+//                 height: auto;
+//                 margin-left: 5px;
+//                 margin-right: 20px;
+//                 width: 5px;
+//             }
+//             .date-n-text-container {
+//                 height: max-content;
+//                 .experiences-dates-container {
+//                     h4 {
+//                         color: $lightYellow;
+//                         margin: 20px 0 15px 0;
+//                         font-size: 1.5em;
+//                     }
+//                 }
+//                 .text-n-marker {
+//                     display: flex;
+//                     height: 100%;
+//                     .yellow-marker {
+//                         background-color: $lightYellow;
+//                         height: auto;
+//                         margin-left: 5px;
+//                         margin-right: 20px;
+//                         width: 5px;
+//                     }
+//                     .experience-description {
+//                         line-height: 1.5em;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

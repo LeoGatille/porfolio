@@ -1,23 +1,24 @@
-.presentation-text-container {
-  padding: 0 70px 0 70px; }
-  .presentation-text-container .presentation-text .title-container .title {
-    color: #000061;
-    font-size: 5em;
-    text-transform: uppercase;
-    line-height: 0.9em; }
-  .presentation-text-container .presentation-text .title-container .crypted {
-    display: block;
-    font-weight: 600;
-    color: #fcbd15;
-    text-decoration: underline;
-    text-decoration-color: #000061; }
-  .presentation-text-container .presentation-text .title-container .subtitle-container {
+.presentation-text-container .presentation-text .title-container .title {
+  color: #000061;
+  font-size: 5em;
+  text-transform: uppercase;
+  line-height: 0.9em; }
+
+.presentation-text-container .presentation-text .title-container .crypted {
+  display: block;
+  font-weight: 600;
+  color: #fcbd15;
+  text-decoration: underline;
+  text-decoration-color: #000061; }
+
+.presentation-text-container .presentation-text .title-container .subtitle-container {
+  color: #000061; }
+  .presentation-text-container .presentation-text .title-container .subtitle-container #subtitle-container {
     color: #000061; }
-    .presentation-text-container .presentation-text .title-container .subtitle-container #subtitle-container {
-      color: #000061; }
-  .presentation-text-container .presentation-text #presentation {
-    display: none;
-    color: #000061; }
+
+.presentation-text-container .presentation-text #presentation {
+  display: none;
+  color: #000061; }
 
 .dark-shadow {
   box-shadow: -25px 0px 10px 0px #141414; }
