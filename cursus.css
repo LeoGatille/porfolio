@@ -1,0 +1,40 @@
+.section-cursus .all-cursusu {
+  margin-left: 150px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .section-cursus .all-cursusu .one-cursus .year {
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0; }
+  .section-cursus .all-cursusu .one-cursus .line {
+    width: 100%;
+    height: 10px;
+    background-color: #fcbd15;
+    margin-bottom: 10px; }
+  .section-cursus .all-cursusu .one-cursus .cursus-body {
+    width: 200px; }
+    .section-cursus .all-cursusu .one-cursus .cursus-body .graduation-name {
+      font-size: 1.4em;
+      font-weight: 600;
+      margin: 0 0 8px 0; }
+    .section-cursus .all-cursusu .one-cursus .cursus-body i {
+      font-size: 1.2em; }
+    .section-cursus .all-cursusu .one-cursus .cursus-body .graudation-location {
+      font-style: normal; }
+
+.skills .fav-container {
+  position: relative;
+  /* margin: 0 0 109px; */
+  width: 100%;
+  height: 530px; }
+  .skills .fav-container h3 {
+    color: white;
+    margin-bottom: 50px; }
+  .skills .fav-container .fav-absolute {
+    position: absolute;
+    background-color: #fcbd15;
+    width: 100vw;
+    padding: 50px 0 50px 50px; }
+    .skills .fav-container .fav-absolute .fav-logos {
+      padding: 0 0px 0 150px; }

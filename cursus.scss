@@ -1,0 +1,65 @@
+@import 'variables.scss';
+.section-cursus {
+    .all-cursusu {
+        margin-left: 150px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        .one-cursus {
+            .year {
+                font-size: 4em;
+                font-weight: 700;
+                margin: 0;
+            }
+            .line {
+                width: 100%;
+                height: 10px;
+                background-color: $yellow;
+                margin-bottom: 10px;
+            }
+            .cursus-body {
+                // margin: 0 0 0 110px;
+                width: 200px;
+                .graduation-name {
+                    font-size: 1.4em;
+                    font-weight: 600;
+                    margin: 0 0 8px 0;
+                }
+                i {
+                    font-size: 1.2em;
+                }
+                .graudation-location {
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+
+//* Skills
+.skills {
+    .fav-container {
+        position: relative;
+/* margin: 0 0 109px; */
+width: 100%;
+height: 530px;
+        
+        h3 {
+            color: white;
+            margin-bottom: 50px;
+        }
+            .fav-absolute {
+                position: absolute;
+                background-color: $yellow;
+                width: 100vw;
+                padding: 50px 0 50px 50px;
+                .fav-logos {
+                    padding: 0 0px 0 150px;
+                    // svg {}
+                }
+            }
+            // .fav-gears {}
+        
+    }
+}
