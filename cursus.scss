@@ -93,3 +93,29 @@
     }
 
 }
+
+//* contacts
+.contacts {
+    div {
+        p{
+            span{
+
+            }
+        }
+    }
+    .contacts-container {
+        div {
+            display: flex;
+            align-items: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            span {
+                margin: 0 10px 0 0;
+                svg {
+                    width: 20px;
+                }
+            }
+        } 
+
+    }
+}

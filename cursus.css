@@ -62,3 +62,13 @@
         font-size: 1.1em; }
     .gallery p i {
       font-weight: 200; }
+
+.contacts .contacts-container div {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
+  margin-bottom: 20px; }
+  .contacts .contacts-container div span {
+    margin: 0 10px 0 0; }
+    .contacts .contacts-container div span svg {
+      width: 20px; }
