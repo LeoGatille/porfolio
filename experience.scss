@@ -1,8 +1,51 @@
+@import 'variables.scss';
+.page-body {
+    display: flex;
+}
+.right-side {
+    margin: 0 0 0 250px;
+}
+.railway {
+    width: 100px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: $yellow;
+}
+.experience-container {
 
-
-
-
-
+}
+.section-title {
+    font-size: 7em;
+    font-weight: 900;
+    // margin: 0;
+}
+.experience-container-body {
+    margin-bottom: 150px;
+    margin-left: 150px;
+    .experience-location {
+        font-size: 5em;
+        font-weight: 700;
+        margin: 0;
+    }
+    .experience-body {
+        margin: 0 0 50px 70px;
+        .dates {
+            font-size: 2.6em;
+            font-weight: 200;
+            margin: 5px 0 5px 40px;
+        }
+        .experience-detail {
+            list-style-type: none;
+            margin: 0;
+            line-height: 30px;
+                li {
+                    font-weight: 500;
+                    font-size: 1.4em;
+                }
+        }
+    }
+}
 
 //! Old shit
 // .xp-container {

@@ -12,7 +12,7 @@ export class IntroductionTextConatainer {
         this.resized++;
         this.request = requestAnimationFrame(this.resizeHeigth);
         this.container.css('height', `${this.container.height() + 10}px`);
-        if (this.resized === 250) {
+        if (this.resized === 20) {
             cancelAnimationFrame(this.request);
         }
     }
