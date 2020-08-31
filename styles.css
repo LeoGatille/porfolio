@@ -12,6 +12,9 @@ body {
   top: 950px;
   /* z-index: 200; */ }
 
+.dark-background {
+  background-color: #ffffff; }
+
 .yellow-background {
   background-color: #ffbe5d; }
 

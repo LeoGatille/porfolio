@@ -1,7 +1,6 @@
 @import 'variables.scss';
 .page-body {
     display: flex;
-    padding-top: 310px;
 }
 .right-side {
     margin: 0 0 0 250px;
@@ -30,7 +29,7 @@
         margin: 0;
     }
     .experience-body {
-        margin: 0 0 50px 70px;
+        // margin: 0 0 50px 70px;
         .dates {
             font-size: 2.2em;
             font-weight: 200;

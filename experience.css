@@ -1,6 +1,5 @@
 .page-body {
-  display: flex;
-  padding-top: 310px; }
+  display: flex; }
 
 .right-side {
   margin: 0 0 0 250px; }
@@ -23,16 +22,14 @@
     font-size: 4em;
     font-weight: 700;
     margin: 0; }
-  .experience-container-body .experience-body {
-    margin: 0 0 50px 70px; }
-    .experience-container-body .experience-body .dates {
-      font-size: 2.2em;
-      font-weight: 200;
-      margin: 5px 0 5px 40px; }
-    .experience-container-body .experience-body .experience-detail {
-      list-style-type: none;
-      margin: 0;
-      line-height: 30px; }
-      .experience-container-body .experience-body .experience-detail li {
-        font-weight: 500;
-        font-size: 1.4em; }
+  .experience-container-body .experience-body .dates {
+    font-size: 2.2em;
+    font-weight: 200;
+    margin: 5px 0 5px 40px; }
+  .experience-container-body .experience-body .experience-detail {
+    list-style-type: none;
+    margin: 0;
+    line-height: 30px; }
+    .experience-container-body .experience-body .experience-detail li {
+      font-weight: 500;
+      font-size: 1.4em; }
