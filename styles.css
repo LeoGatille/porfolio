@@ -10,7 +10,7 @@ body {
   position: absolute;
   right: 0;
   top: 950px;
-  /* z-index: 200; */ }
+  z-index: 200; }
 
 .dark-background {
   background-color: #ffffff; }
