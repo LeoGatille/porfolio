@@ -4,7 +4,7 @@
     .presentation-text {
         .title-container {
             .title {
-                color: $deepBlue;
+                color: black;
                 font-size: 5em;
                 text-transform: uppercase;
                 line-height: 0.9em;
@@ -14,18 +14,18 @@
                 font-weight: 600;
                 color: #fcbd15;
                 text-decoration: underline;
-                text-decoration-color: $deepBlue ;
+                text-decoration-color: #fcbd15 ;
             }
             .subtitle-container {
-                color: $deepBlue;
+                // color: $deepBlue;
                 #subtitle-container {
-                    color: $deepBlue;
+                    // color: $deepBlue;
                 }
             }
         }
         #presentation {
             display: none;
-            color: $deepBlue;
+            // color: $deepBlue;
         }
     }
 }

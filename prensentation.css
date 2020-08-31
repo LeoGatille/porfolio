@@ -1,5 +1,5 @@
 .presentation-text-container .presentation-text .title-container .title {
-  color: #000061;
+  color: black;
   font-size: 5em;
   text-transform: uppercase;
   line-height: 0.9em; }
@@ -9,16 +9,10 @@
   font-weight: 600;
   color: #fcbd15;
   text-decoration: underline;
-  text-decoration-color: #000061; }
-
-.presentation-text-container .presentation-text .title-container .subtitle-container {
-  color: #000061; }
-  .presentation-text-container .presentation-text .title-container .subtitle-container #subtitle-container {
-    color: #000061; }
+  text-decoration-color: #fcbd15; }
 
 .presentation-text-container .presentation-text #presentation {
-  display: none;
-  color: #000061; }
+  display: none; }
 
 .dark-shadow {
   box-shadow: -25px 0px 10px 0px #141414; }

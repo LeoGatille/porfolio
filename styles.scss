@@ -5,6 +5,15 @@ body {
     overflow-x: hidden;
     font-family: 'Raleway', sans-serif;
 }
+.xp-gears {
+    overflow: hidden;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    top: 950px;
+    /* z-index: 200; */
+}
+
 // .dark-background  {
 //     background-color: #141414;
 // }
@@ -12,7 +21,7 @@ body {
 //     background-color: #fcbd15;
 // }
 .dark-background  {
-    background-color: $white;
+    // background-color: $white;
 }
 .yellow-background  {
     background-color: $lightYellow;
@@ -137,6 +146,7 @@ body {
     text-transform: uppercase;
     line-height: 0.9em;
     font-weight: 900;
+    margin-bottom: 0;
 }
 @media (min-width: 801px) and (max-width: 1200px) {
     #top-gear-container {
