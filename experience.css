@@ -1,9 +1,6 @@
 .page-body {
   display: flex; }
 
-.right-side {
-  margin: 0 0 0 250px; }
-
 .railway {
   width: 100px;
   height: 100vh;
@@ -13,7 +10,7 @@
 
 .section-title {
   font-size: 7em;
-  font-weight: 900; }
+  font-weight: 100; }
 
 .experience-container-body {
   margin-bottom: 150px;

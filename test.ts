@@ -15,11 +15,20 @@ $(document).ready(() => {
         new Gear('two', 0.7),
         new Gear('three', -0.4),
         new Gear('four', 1.5),
-        new Gear('five', -2),
     ]
     topGears.forEach(gear => {
         gear.animation()
     })
+    // const bottomGears: Gear[] = [
+    //     new Gear('six', -2),
+    //     new Gear('seven', -2),
+    //     new Gear('eight', -2),
+    //     new Gear('nine', -2),
+    //     new Gear('ten', -2),
+    // ]
+    // bottomGears.forEach(gear => {
+    //     gear.animation()
+    // })
     const testResize = new RelativeWidth('top-SVG', 'first-ground-circle', 15);
     const introAnimationManager = new IntroAnimation(topGears);
     const introductionTextContainer = new IntroductionTextConatainer($('#overflow-container'));

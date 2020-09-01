@@ -1,5 +1,5 @@
 .section-cursus {
-  margin: 0 0 150px 0; }
+  height: 600px; }
   .section-cursus .all-cursusu {
     margin-left: 150px;
     display: flex;
@@ -25,29 +25,37 @@
       .section-cursus .all-cursusu .one-cursus .cursus-body .graudation-location {
         font-style: normal; }
 
-.skills .fav-container {
-  position: relative;
-  width: 100%;
-  height: 700px; }
-  .skills .fav-container h3 {
-    font-style: italic;
-    font-size: 2em;
-    color: white;
-    margin: 0 0 70px 0; }
-  .skills .fav-container .fav-absolute {
-    position: absolute;
-    background-color: #fcbd15;
-    width: 100vw;
-    padding: 50px 0 50px 50px; }
-    .skills .fav-container .fav-absolute .fav-flex {
-      display: flex; }
-      .skills .fav-container .fav-absolute .fav-flex .fav-logos {
-        padding: 0 0px 0 150px; }
+.skills {
+  margin-top: 150px; }
+  .skills .fav-container {
+    position: relative;
+    width: 100%;
+    height: 700px; }
+    .skills .fav-container .section-title {
+      color: white;
+      margin-bottom: 50px; }
+    .skills .fav-container h3 {
+      font-style: italic;
+      font-size: 2em;
+      color: white;
+      margin: 0  0 70px 320px; }
+    .skills .fav-container .fav-absolute {
+      position: absolute;
+      background-color: #fcbd15;
+      width: 100vw;
+      padding: 50px 0 50px 50px; }
+      .skills .fav-container .fav-absolute .fav-flex {
+        display: flex; }
+        .skills .fav-container .fav-absolute .fav-flex .fav-logos {
+          padding: 0 0px 0 150px; }
+    .skills .fav-container .main-skills {
+      margin-top: 160px; }
 
 .gallery {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  height: 440px; }
   .gallery p {
     padding: 0 0 60px 0;
     font-size: 2em;
@@ -63,12 +71,53 @@
     .gallery p i {
       font-weight: 200; }
 
-.contacts .contacts-container div {
+.contacts .contacts-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 2em;
-  margin-bottom: 20px; }
-  .contacts .contacts-container div span {
-    margin: 0 10px 0 0; }
-    .contacts .contacts-container div span svg {
-      width: 20px; }
+  background-color: white;
+  border-radius: 0 0 800px 0;
+  height: 520px; }
+  .contacts .contacts-container .paper-plane-container {
+    width: 600px; }
+    .contacts .contacts-container .paper-plane-container svg {
+      width: 100%; }
+  .contacts .contacts-container .contacts {
+    margin-top: 50px;
+    margin-left: 50px; }
+    .contacts .contacts-container .contacts p {
+      margin: 5px 0 5px 0; }
+      .contacts .contacts-container .contacts p #behance-contacts {
+        transition: all ease-in-out 0.2s;
+        font-weight: 900;
+        color: #0057ff; }
+        .contacts .contacts-container .contacts p #behance-contacts:hover {
+          color: #fcbd15;
+          font-size: 1.1em; }
+      .contacts .contacts-container .contacts p #linkedin-contacts {
+        transition: all ease-in-out 0.2s;
+        font-weight: 900;
+        color: #0077b5; }
+        .contacts .contacts-container .contacts p #linkedin-contacts:hover {
+          color: #fcbd15;
+          font-size: 1.1em; }
+
+#bottom-gear-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fcbd15; }
+  #bottom-gear-container .gears-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; }
+  #bottom-gear-container .gears-overflow-container {
+    height: 30vh;
+    width: 30%; }
+    #bottom-gear-container .gears-overflow-container .gears-SVG {
+      width: 100%;
+      overflow: overlay; }
+
+.marge-left {
+  margin: 0 0 0 250px; }

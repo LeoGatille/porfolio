@@ -14,3 +14,10 @@
 
 .dark-fill {
   fill: #ffffff; }
+
+.white-fill {
+  fill: #ffffff; }
+
+.white-stroke {
+  stroke: #ffffff;
+  stroke-miterlimit: 55; }

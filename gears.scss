@@ -33,3 +33,10 @@
 .dark-fill {
     fill: $white;
 }
+.white-fill {
+    fill: $white;
+}
+.white-stroke {
+    stroke: $white;
+    stroke-miterlimit: 55;
+}
