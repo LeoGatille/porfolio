@@ -16,9 +16,40 @@ $(document).ready(() => {
         new Gear('three', -0.4),
         new Gear('four', 1.5),
     ]
+    const xpGears = [
+        new Gear('xp-one', -0.5),
+        new Gear('xp-two', 0.2),
+        new Gear('xp-three', -0.1),
+        new Gear('xp-four', 0.3),
+        new Gear('xp-five', -0.4),
+        // new Gear('xp-gear-six', 0.5),
+    ]
+    const skillsGears = [
+        new Gear('skills-one', -0.2),
+        new Gear('skills-two', 0.5),
+        new Gear('skills-three', -0.2),
+    ]
+    const lastGears = [
+        new Gear('last-gears-one', 0.5),
+        new Gear('last-gears-two', -0.5),
+        new Gear('last-gears-three', 0.1),
+        new Gear('last-gears-four', -0.3),
+        new Gear('last-gears-five', 0.2),
+    ]
     topGears.forEach(gear => {
         gear.animation()
     })
+    xpGears.forEach(gear => {
+        gear.animation()
+    })
+    skillsGears.forEach(gear => {
+        gear.animation()
+    })
+    lastGears.forEach(gear => {
+        gear.animation()
+    })
+
+
     // const bottomGears: Gear[] = [
     //     new Gear('six', -2),
     //     new Gear('seven', -2),

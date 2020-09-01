@@ -4,6 +4,9 @@ body {
   overflow-x: hidden;
   font-family: 'Raleway', sans-serif; }
 
+g {
+  transform-origin: center center; }
+
 .xp-gears {
   overflow: hidden;
   width: 400px;
