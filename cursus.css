@@ -1,3 +1,23 @@
+.smooth-angles-container {
+  position: relative;
+  width: 100px;
+  height: 100px; }
+  .smooth-angles-container .angle-mask-right {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 0 0 0 100px; }
+  .smooth-angles-container .angle-mask-left {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100px 0 0 0; }
+  .smooth-angles-container .angle-background {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #fcbd15; }
+
 .section-cursus {
   height: 600px; }
   .section-cursus .all-cursusu {
@@ -25,31 +45,29 @@
       .section-cursus .all-cursusu .one-cursus .cursus-body .graudation-location {
         font-style: normal; }
 
-.skills {
-  margin-top: 150px; }
-  .skills .fav-container {
-    position: relative;
-    width: 100%;
-    height: 700px; }
-    .skills .fav-container .section-title {
-      color: white;
-      margin-bottom: 50px; }
-    .skills .fav-container h3 {
-      font-style: italic;
-      font-size: 2em;
-      color: white;
-      margin: 0  0 70px 320px; }
-    .skills .fav-container .fav-absolute {
-      position: absolute;
-      background-color: #fcbd15;
-      width: 100vw;
-      padding: 50px 0 50px 50px; }
-      .skills .fav-container .fav-absolute .fav-flex {
-        display: flex; }
-        .skills .fav-container .fav-absolute .fav-flex .fav-logos {
-          padding: 0 0px 0 150px; }
-    .skills .fav-container .main-skills {
-      margin-top: 160px; }
+.skills .fav-container {
+  position: relative;
+  width: 100%;
+  height: 916px; }
+  .skills .fav-container .section-title {
+    color: white;
+    margin-bottom: 50px; }
+  .skills .fav-container h3 {
+    font-style: italic;
+    font-size: 2em;
+    color: white;
+    margin: 0  0 70px 320px; }
+  .skills .fav-container .fav-absolute {
+    position: absolute;
+    background-color: #fcbd15;
+    width: 100vw;
+    padding: 50px 0 50px 50px; }
+    .skills .fav-container .fav-absolute .fav-flex {
+      display: flex; }
+      .skills .fav-container .fav-absolute .fav-flex .fav-logos {
+        padding: 0 0px 0 150px; }
+  .skills .fav-container .main-skills {
+    margin-top: 160px; }
 
 .gallery {
   display: flex;
