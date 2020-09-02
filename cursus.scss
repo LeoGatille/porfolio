@@ -62,7 +62,6 @@
     .fav-container {
         position: relative;
         width: 100%;
-        height: 916px;
         .section-title {
             color: white;
             margin-bottom: 50px;
@@ -74,7 +73,8 @@
             margin: 0  0 70px 320px;
         }
         .fav-absolute {
-            position: absolute;
+            border-radius: 0 0 0 100px;
+            // position: absolute;
             background-color: $yellow;
             width: 100vw;
             padding: 50px 0 50px 50px;
@@ -84,8 +84,15 @@
                     padding: 0 0px 0 150px;
                     // svg {}
                 }
+                .fav-gears-container {
+                    margin: -120px 0 0 0;
+                    padding: 0 0 0 160px;
+                }
             }
             // .fav-gears {}
+        }
+        .skills-container {
+            width: 60vw;
         }
         .main-skills {
             margin-top: 160px;
@@ -205,5 +212,39 @@
         img {
             width: 60%;
         }
+    }
+    
+    .skills {
+        .fav-container {
+            .fav-absolute {
+                h3 {
+                    margin: 0 0 0 10vw;
+                }
+                .fav-flex{
+                    display: block;
+
+                    .fav-logos {
+                        padding: 0;
+                        svg {
+                            width: 260px;
+                            height: 243px;
+                        }
+                    }
+                    .fav-gears-container {
+                        margin: 0;
+                        padding: 30px 82px 0 0px;
+                        .fav-gears {
+                            margin: 0;
+                            padding: 0;
+                            svg {
+                                width: 100%;
+                                height: 120px;
+                            }
+                        }
+                        }
+                    }
+                } 
+            }
+            
     }
 }

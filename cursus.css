@@ -51,8 +51,7 @@
 
 .skills .fav-container {
   position: relative;
-  width: 100%;
-  height: 916px; }
+  width: 100%; }
   .skills .fav-container .section-title {
     color: white;
     margin-bottom: 50px; }
@@ -62,7 +61,7 @@
     color: white;
     margin: 0  0 70px 320px; }
   .skills .fav-container .fav-absolute {
-    position: absolute;
+    border-radius: 0 0 0 100px;
     background-color: #fcbd15;
     width: 100vw;
     padding: 50px 0 50px 50px; }
@@ -70,6 +69,11 @@
       display: flex; }
       .skills .fav-container .fav-absolute .fav-flex .fav-logos {
         padding: 0 0px 0 150px; }
+      .skills .fav-container .fav-absolute .fav-flex .fav-gears-container {
+        margin: -120px 0 0 0;
+        padding: 0 0 0 160px; }
+  .skills .fav-container .skills-container {
+    width: 60vw; }
   .skills .fav-container .main-skills {
     margin-top: 160px; }
 
@@ -151,4 +155,22 @@
     height: max-content;
     justify-content: center; }
     .gallery img {
-      width: 60%; } }
+      width: 60%; }
+  .skills .fav-container .fav-absolute h3 {
+    margin: 0 0 0 10vw; }
+  .skills .fav-container .fav-absolute .fav-flex {
+    display: block; }
+    .skills .fav-container .fav-absolute .fav-flex .fav-logos {
+      padding: 0; }
+      .skills .fav-container .fav-absolute .fav-flex .fav-logos svg {
+        width: 260px;
+        height: 243px; }
+    .skills .fav-container .fav-absolute .fav-flex .fav-gears-container {
+      margin: 0;
+      padding: 30px 82px 0 0px; }
+      .skills .fav-container .fav-absolute .fav-flex .fav-gears-container .fav-gears {
+        margin: 0;
+        padding: 0; }
+        .skills .fav-container .fav-absolute .fav-flex .fav-gears-container .fav-gears svg {
+          width: 100%;
+          height: 120px; } }
