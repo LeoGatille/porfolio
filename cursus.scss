@@ -151,8 +151,8 @@
             
         }
         .contacts {
-            margin-top: 50px;
-            margin-left: 50px;
+            margin-top: 10vw;
+            margin-left: 10vw;
             p {
                 margin: 5px 0 5px 0;
                 #behance-contacts {
@@ -217,6 +217,7 @@
     .skills {
         .fav-container {
             .fav-absolute {
+                padding: 50px 0 50px 3vw;
                 h3 {
                     margin: 0 0 0 10vw;
                 }
@@ -241,10 +242,48 @@
                                 height: 120px;
                             }
                         }
-                        }
                     }
-                } 
+                }
+            } 
+        }
+    }
+    .contacts {
+        h2 {
+            margin-bottom: 10px;
+        }
+        .contacts-container {
+            height: 364px;
+            display: block;
+            font-size: 1.6em;
+            .paper-plane-container{
+                width: 50px;
+                svg {
+                    width: 50px;
+                }
+                .contacts-txt {    
+                    margin: 0;
+                    padding: 0;
+                }
             }
-            
+        }
+    }
+    #bottom-gear-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        background-color: $yellow;
+        .gears-container {
+
+            align-items: center;
+        }
+        .gears-overflow-container {
+            height: 30vh;
+            width: 55%;
+            .gears-SVG {
+                width: 100%;
+                overflow: overlay;
+            }
+        }
     }
 }

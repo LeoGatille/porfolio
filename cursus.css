@@ -109,8 +109,8 @@
     .contacts .contacts-container .paper-plane-container svg {
       width: 100%; }
   .contacts .contacts-container .contacts {
-    margin-top: 50px;
-    margin-left: 50px; }
+    margin-top: 10vw;
+    margin-left: 10vw; }
     .contacts .contacts-container .contacts p {
       margin: 5px 0 5px 0; }
       .contacts .contacts-container .contacts p #behance-contacts {
@@ -156,21 +156,50 @@
     justify-content: center; }
     .gallery img {
       width: 60%; }
-  .skills .fav-container .fav-absolute h3 {
-    margin: 0 0 0 10vw; }
-  .skills .fav-container .fav-absolute .fav-flex {
-    display: block; }
-    .skills .fav-container .fav-absolute .fav-flex .fav-logos {
-      padding: 0; }
-      .skills .fav-container .fav-absolute .fav-flex .fav-logos svg {
-        width: 260px;
-        height: 243px; }
-    .skills .fav-container .fav-absolute .fav-flex .fav-gears-container {
-      margin: 0;
-      padding: 30px 82px 0 0px; }
-      .skills .fav-container .fav-absolute .fav-flex .fav-gears-container .fav-gears {
+  .skills .fav-container .fav-absolute {
+    padding: 50px 0 50px 3vw; }
+    .skills .fav-container .fav-absolute h3 {
+      margin: 0 0 0 10vw; }
+    .skills .fav-container .fav-absolute .fav-flex {
+      display: block; }
+      .skills .fav-container .fav-absolute .fav-flex .fav-logos {
+        padding: 0; }
+        .skills .fav-container .fav-absolute .fav-flex .fav-logos svg {
+          width: 260px;
+          height: 243px; }
+      .skills .fav-container .fav-absolute .fav-flex .fav-gears-container {
+        margin: 0;
+        padding: 30px 82px 0 0px; }
+        .skills .fav-container .fav-absolute .fav-flex .fav-gears-container .fav-gears {
+          margin: 0;
+          padding: 0; }
+          .skills .fav-container .fav-absolute .fav-flex .fav-gears-container .fav-gears svg {
+            width: 100%;
+            height: 120px; }
+  .contacts h2 {
+    margin-bottom: 10px; }
+  .contacts .contacts-container {
+    height: 364px;
+    display: block;
+    font-size: 1.6em; }
+    .contacts .contacts-container .paper-plane-container {
+      width: 50px; }
+      .contacts .contacts-container .paper-plane-container svg {
+        width: 50px; }
+      .contacts .contacts-container .paper-plane-container .contacts-txt {
         margin: 0;
         padding: 0; }
-        .skills .fav-container .fav-absolute .fav-flex .fav-gears-container .fav-gears svg {
-          width: 100%;
-          height: 120px; } }
+  #bottom-gear-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #fcbd15; }
+    #bottom-gear-container .gears-container {
+      align-items: center; }
+    #bottom-gear-container .gears-overflow-container {
+      height: 30vh;
+      width: 55%; }
+      #bottom-gear-container .gears-overflow-container .gears-SVG {
+        width: 100%;
+        overflow: overlay; } }
