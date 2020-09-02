@@ -98,7 +98,7 @@ $(document).ready(() => {
     setTimeout(() => {
         const myPromise = introAnimationManager.rise();
         introAnimationManager.promise.then(test => {
-            introductionTextContainer.resizeHeigth();
+            // introductionTextContainer.resizeHeigth();
             const quoteApearence = window.addEventListener('scroll', () => {
                 if (scrollListener.getScrollDirection() === 'down' && scrollListener.newScrollY >= 70) {
                     console.log('Bonjour');

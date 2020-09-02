@@ -20,6 +20,9 @@
 .experience-container-body {
     margin-bottom: 150px;
     margin-left: 150px;
+    svg {
+        display: none;
+    }
     .experience-location {
         font-size: 4em;
         font-weight: 700;
@@ -41,6 +44,22 @@
                     font-size: 1.4em;
                 }
         }
+    }
+}
+
+@media(max-width: 500px) {
+    .section-title {
+        font-size: 3em;
+        font-weight: 100;
+    }
+    .experience-container-body {
+        margin-left: 0;
+        svg {
+            width: 0;
+        }
+    }
+    .experience-body {
+        font-size: 0.7em;
     }
 }
 
