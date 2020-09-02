@@ -1,5 +1,6 @@
 .page-body {
-  display: flex; }
+  display: flex;
+  margin-top: 250px; }
 
 .railway {
   width: 100px;

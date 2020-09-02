@@ -1,5 +1,5 @@
 import { ScrollListener } from './scrollListener';
-export class IntroductionTextConatainer {
+export class IntroductionTextContainer {
     constructor(target: JQuery<HTMLElement>) {
         this.container = target;
     }

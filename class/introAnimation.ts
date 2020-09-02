@@ -69,6 +69,8 @@ export class IntroAnimation {
                     lastName.animationDecryptText();
                 }).then(() => {
                     subtitle.animationDecryptText();
+                }).then(() => {
+                    $('#biographie').fadeIn(1000)
                 });
                 Promise.resolve(() => animatedText);
             }, 300);

@@ -1,14 +1,11 @@
-import { FadeIn } from './class/fadeIn';
 import { ScrollListener } from './class/scrollListener';
-import { IntroductionTextConatainer } from './class/introductionTextContainer';
+import { IntroductionTextContainer } from './class/introductionTextContainer';
 import { IntroAnimation } from './class/introAnimation';
 import { RelativeWidth } from './class/relativeWidth';
 import { Gear } from './class/gear';
-import { TopGears } from './class/topGears';
 import * as $ from 'jquery'
-import { promises } from 'fs';
-import { resolve } from 'path';
 console.log('Bonjour les enfants');
+window.scrollTo(500,500)
 $(document).ready(() => {
     const topGears: Gear[] = [
         new Gear('one', -0.2),
@@ -23,7 +20,6 @@ $(document).ready(() => {
         new Gear('xp-three', -0.1),
         new Gear('xp-four', 0.3),
         new Gear('xp-five', -0.4),
-        // new Gear('xp-gear-six', 0.5),
     ]
     const skillsGears = [
         new Gear('skills-one', -0.2),
@@ -49,25 +45,10 @@ $(document).ready(() => {
     lastGears.forEach(gear => {
         gear.animation()
     })
-
-
-    // const bottomGears: Gear[] = [
-    //     new Gear('six', -2),
-    //     new Gear('seven', -2),
-    //     new Gear('eight', -2),
-    //     new Gear('nine', -2),
-    //     new Gear('ten', -2),
-    // ]
-    // bottomGears.forEach(gear => {
-    //     gear.animation()
-    // })
     const testResize = new RelativeWidth('top-SVG', 'first-ground-circle', 15);
     const introAnimationManager = new IntroAnimation(topGears);
-    const introductionTextContainer = new IntroductionTextConatainer($('#overflow-container'));
+    // const introductionTextContainer = new IntroductionTextContainer($('#overflow-container'));
     const scrollListener = new ScrollListener();
-    // const stendhalQuote = new FadeIn($('.quote-container'));
-
-
     const scrollDirFn = window.addEventListener('scroll', () => {
         if (scrollListener.getScrollDirection() === 'up') {
             console.log('GearsUP');
@@ -93,19 +74,19 @@ $(document).ready(() => {
         }
         // }
     });
-$('main').css('display', 'none');
-$('#bottom-gear-container').css('display', 'none');
-$('.xp-gears').css('display', 'none');
-$('.presentation-text').children('p').css('display', 'none');
-
+    // $('main').css('display', 'none');
+    // $('#bottom-gear-container').css('display', 'none');
+    // $('.xp-gears').css('opacity', '0');
+    $('#biographie').css('display', 'none');
     setTimeout(() => {
         const myPromise = introAnimationManager.rise();
         introAnimationManager.promise.then(test => {
             // introductionTextContainer.resizeHeigth();
-            const textAppear = new IntroductionTextConatainer($('.presentation-text-container'));
-            $('main').css('display', 'flex');
-            $('#bottom-gear-container').css('display', 'flex');
-            $('.xp-gears').css('display', 'unset');
+            // const textAppear = new IntroductionTextContainer($('.presentation-text-container'));
+            // $('main').css('display', 'flex');
+            // $('#bottom-gear-container').css('display', 'flex');
+            // $('.xp-gears').css('opacity', '1');
+            $('body').css('overflow-y', 'scroll')
             const quoteApearence = window.addEventListener('scroll', () => {
                 if (scrollListener.getScrollDirection() === 'down' && scrollListener.newScrollY >= 70) {
                     console.log('Bonjour');

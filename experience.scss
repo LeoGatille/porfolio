@@ -1,6 +1,7 @@
 @import 'variables.scss';
 .page-body {
     display: flex;
+    margin-top: 250px;
 }
 .railway {
     width: 100px;
@@ -9,9 +10,7 @@
     top: 0;
     background-color: $yellow;
 }
-.experience-container {
 
-}
 .section-title {
     font-size: 7em;
     font-weight: 100;
