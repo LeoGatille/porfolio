@@ -15,9 +15,10 @@
 }
 
 .section-cursus {
-    height: 600px;
+    margin-bottom: 96px;
+    height: max-content;
         .all-cursusu {
-        margin-left: 150px;
+        margin-left: 10vw;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -190,13 +191,19 @@
     }
 }
 .marge-left {
-    margin: 0 0 0 250px;
+    margin-left: 10vw;
 }
-@media (max-width: 1580px) {
+@media (max-width: 500px) {
     .marge-left {
-        margin: 0 0 0 50px;
-        transform: scale(0.8);
+        // margin: 0 0 0 10px;
+        padding-right: 10px;
+        // transform: scale(0.8);
     }
-    section {
+    .gallery {
+        height: max-content;
+        justify-content: center;
+        img {
+            width: 60%;
+        }
     }
 }
