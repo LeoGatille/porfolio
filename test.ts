@@ -93,12 +93,19 @@ $(document).ready(() => {
         }
         // }
     });
-
+$('main').css('display', 'none');
+$('#bottom-gear-container').css('display', 'none');
+$('.xp-gears').css('display', 'none');
+$('.presentation-text').children('p').css('display', 'none');
 
     setTimeout(() => {
         const myPromise = introAnimationManager.rise();
         introAnimationManager.promise.then(test => {
             // introductionTextContainer.resizeHeigth();
+            const textAppear = new IntroductionTextConatainer($('.presentation-text-container'));
+            $('main').css('display', 'flex');
+            $('#bottom-gear-container').css('display', 'flex');
+            $('.xp-gears').css('display', 'unset');
             const quoteApearence = window.addEventListener('scroll', () => {
                 if (scrollListener.getScrollDirection() === 'down' && scrollListener.newScrollY >= 70) {
                     console.log('Bonjour');
