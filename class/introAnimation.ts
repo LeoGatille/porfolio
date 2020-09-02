@@ -144,7 +144,7 @@ export class IntroAnimation {
         this.backgroundHeight = this.backgroundHeight - this.riseSpeedControl;
         this.background.css('height', `${this.backgroundHeight}px`);
         this.backgroundCircleContainer.css('height', `${this.backgroundHeight}px`);
-        this.overflowContainer.css('height', `${this.overflowContainer.height() + this.riseSpeedControl}`);
+        // this.overflowContainer.css('height', `${this.overflowContainer.height() + this.riseSpeedControl}`);
     }
     private setRiseSpeed() {
         if (this.backgroundHeight < (window.window.innerHeight / 6)) {

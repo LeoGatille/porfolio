@@ -1,0 +1,18 @@
+@media (max-width: 500px) {
+    .presentation-text-container {
+        .presentation-text {
+            .title-container {
+                margin-left: 10px
+            }
+        }
+        .bio {
+            width: 90%;
+            padding: 0 0 0 10px;
+            font-size: 1.2em;
+            margin:  0 0 010px;
+        }
+    }
+.page-body {
+    display: block;
+}
+}
