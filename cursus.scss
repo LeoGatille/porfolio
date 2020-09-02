@@ -192,3 +192,11 @@
 .marge-left {
     margin: 0 0 0 250px;
 }
+@media (max-width: 1580px) {
+    .marge-left {
+        margin: 0 0 0 50px;
+        transform: scale(0.8);
+    }
+    section {
+    }
+}

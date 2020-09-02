@@ -30,3 +30,21 @@
     .experience-container-body .experience-body .experience-detail li {
       font-weight: 500;
       font-size: 1.4em; }
+
+@media (max-width: 1730px) {
+  .xp-gears {
+    overflow: hidden;
+    width: 400px;
+    position: absolute;
+    right: 0;
+    top: 950px;
+    z-index: 200; }
+    .xp-gears svg {
+      width: 500px; } }
+
+@media (max-width: 1580px) {
+  .xp-gears {
+    display: none;
+    justify-content: flex-end; }
+    .xp-gears svg {
+      width: 250px; } }

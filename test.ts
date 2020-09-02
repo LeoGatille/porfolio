@@ -15,6 +15,7 @@ $(document).ready(() => {
         new Gear('two', 0.7),
         new Gear('three', -0.4),
         new Gear('four', 1.5),
+        new Gear('five', -2.9),
     ]
     const xpGears = [
         new Gear('xp-one', -0.5),
@@ -27,7 +28,7 @@ $(document).ready(() => {
     const skillsGears = [
         new Gear('skills-one', -0.2),
         new Gear('skills-two', 0.5),
-        new Gear('skills-three', -0.2),
+        new Gear('skills-three', -0.4),
     ]
     const lastGears = [
         new Gear('last-gears-one', 0.5),

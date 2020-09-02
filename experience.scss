@@ -2,9 +2,6 @@
 .page-body {
     display: flex;
 }
-.right-side {
-    // margin: 0 0 0 250px;
-}
 .railway {
     width: 100px;
     height: 100vh;
@@ -47,102 +44,25 @@
     }
 }
 
-//! Old shit
-// .xp-container {
-//     overflow: hidden;
-//     display: flex;
-//     height: 938px;
-//     .xp-relative-container {
-//         position: relative;
-//         .xp-gears-container {
-//             width: 710px;
-//             svg {
-//                 position: relative;
-//                 margin: -350px 0 0 -400px;
-//             }
-//         }
-//     }
-//     .xp-caroussel {
-//         display: flex;
-//         flex-direction: column;
-        
-//         .xp-text-container {
-    
-//             .xp-location {
-        
-//                 h2 {
-//                     font-size: 4em;
-//                 }
-//                 h3 {
-//                     font-size: 2em;
-//                 }
-//             }
-//             .multy-xp-text-container {
-//                 .xp-text {
-//                     h3 {
-                        
-//                     }
-//                     p {
-                        
-//                     }
-//                 }
-//         }
-//         }
-//     }
-// }
-// .xp-caroussel {
-//     position: sticky;
-//     top: 0;
-// }
-// // @import 'variables.scss';
-// // .experiences-container {
-// //     .experiences-main-title {
-// //         font-size: 4em;
-// //     }
-// //     .one-experience-container {
-// //         height: max-content;
-// //         .experience-location-container {
-// //             h3 {
-// //                 color: $deepBlue;
-// //                 font-size: 3em;
-// //                 line-height: 0.5em;
-// //                 margin: 55px 0 15px 0;
-// //             }
-// //         }
-// //         .experience-body {
-// //             display: flex;
-// //             height: 100%;
-// //             .marker-blue {
-// //                 background-color: $deepBlue;
-// //                 height: auto;
-// //                 margin-left: 5px;
-// //                 margin-right: 20px;
-// //                 width: 5px;
-// //             }
-// //             .date-n-text-container {
-// //                 height: max-content;
-// //                 .experiences-dates-container {
-// //                     h4 {
-// //                         color: $lightYellow;
-// //                         margin: 20px 0 15px 0;
-// //                         font-size: 1.5em;
-// //                     }
-// //                 }
-// //                 .text-n-marker {
-// //                     display: flex;
-// //                     height: 100%;
-// //                     .yellow-marker {
-// //                         background-color: $lightYellow;
-// //                         height: auto;
-// //                         margin-left: 5px;
-// //                         margin-right: 20px;
-// //                         width: 5px;
-// //                     }
-// //                     .experience-description {
-// //                         line-height: 1.5em;
-// //                     }
-// //                 }
-// //             }
-// //         }
-// //     }
-// // }
+@media (max-width: 1730px) {
+    .xp-gears {
+        overflow: hidden;
+        width: 400px;
+        position: absolute;
+        right: 0;
+        top: 950px;
+        z-index: 200;
+        svg {
+            width: 500px;
+        }
+    }
+}
+@media (max-width: 1580px) {
+    .xp-gears {
+        display: none;
+        justify-content: flex-end;
+        svg {
+            width: 250px;
+        }
+    }
+}

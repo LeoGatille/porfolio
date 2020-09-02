@@ -3,6 +3,7 @@
     // padding: 0 70px 0 70px;
     .presentation-text {
         .title-container {
+            margin-left: 350px;
             .title {
                 color: black;
                 font-size: 5em;
@@ -27,6 +28,11 @@
             display: none;
             // color: $deepBlue;
         }
+    }
+    .bio {
+        margin: 0 0 0 350px;
+        width: 700px;
+        font-size: 1.2em;
     }
 }
 .dark-shadow {
@@ -69,5 +75,20 @@
     .quote-emphasis {
         font-weight: 900;
         font-size: 1.5em;
+    }
+}
+@media (max-width: 500px) {
+    .presentation-text-container {
+        .presentation-text {
+            .title-container {
+                margin-left: 10px
+            }
+        }
+        .bio {
+            width: 90%;
+            padding: 0 0 0 10px;
+            font-size: 1.2em;
+            margin:  0 0 010px;
+        }
     }
 }

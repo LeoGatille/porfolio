@@ -19,10 +19,19 @@ g {
   background-color: #ffffff; }
 
 .yellow-background {
-  background-color: #ffbe5d; }
+  background-color: #fcbd15; }
 
 .blue-background {
-  background-color: #000061; }
+  background-color: #141414; }
+
+#background-circle {
+  background-color: #fcbd15;
+  z-index: -10;
+  position: static;
+  height: 0;
+  width: 0;
+  margin: auto;
+  border-radius: 100%; }
 
 .top-container {
   display: flex;
