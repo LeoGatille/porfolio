@@ -41,8 +41,12 @@
     margin-left: 0; }
     .experience-container-body svg {
       width: 0; }
-  .experience-body {
-    font-size: 0.7em; } }
+    .experience-container-body .experience-body {
+      font-size: 0.7em; }
+      .experience-container-body .experience-body .dates {
+        margin: 10px 0 10px 0; }
+      .experience-container-body .experience-body .experience-detail {
+        line-height: 23px; } }
 
 @media (max-width: 1730px) {
   .xp-gears {

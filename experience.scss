@@ -57,9 +57,15 @@
         svg {
             width: 0;
         }
-    }
-    .experience-body {
-        font-size: 0.7em;
+        .experience-body {
+            font-size: 0.7em;
+            .dates {
+                margin: 10px 0 10px 0;
+            }
+            .experience-detail {
+                line-height: 23px;
+            }
+        }
     }
 }
 
