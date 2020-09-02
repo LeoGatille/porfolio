@@ -131,7 +131,7 @@ export class IntroAnimation {
     windowResizeListener: any;
     private setInitialHeight() {
         this.background.css('height', `${this.backgroundHeight}px`);
-        this.overflowContainer.css('height', '0');
+        // this.overflowContainer.css('height', '0');
     }
     public launchSwitchColors() {
         this.gearsArray.forEach((gear) => {
